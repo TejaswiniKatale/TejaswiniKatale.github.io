@@ -161,13 +161,45 @@
       border-radius: 5px 5px 0 0;
     }
 
-    .pub-img {
-      width: 255px;
-      height: 118px;
-      object-fit: cover;
-      background-color: #eeeeee;
-      display: block;
-    }
+   .pub-img {
+  width: 255px;
+  height: 118px;
+  object-fit: cover;
+  background-color: #eeeeee;
+  display: block;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+    .image-popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.image-popup img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 4px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
     .pub-title {
       font-weight: 700;
@@ -457,7 +489,12 @@
   <div class="pub">
     <div class="pub-img-box">
       <a href="pub2.jpg" target="_blank">
-  <img src="pub2.jpg" alt="Airport cyber-resilience publication" class="pub-img" />
+ <img
+  src="pub2.jpg"
+  alt="Airport cyber-resilience publication"
+  class="pub-img"
+  onclick="openPopup(this.src)"
+/>
 </a>
     </div>
 
@@ -626,5 +663,21 @@
 
   </div>
 
+
+  <div id="imagePopup" class="image-popup" onclick="closePopup()">
+  <span class="close-popup">&times;</span>
+  <img id="popupImage" src="" alt="Expanded publication image" />
+</div>
+  
+<script>
+  function openPopup(src) {
+    document.getElementById("popupImage").src = src;
+    document.getElementById("imagePopup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("imagePopup").style.display = "none";
+  }
+</script>
 </body>
 </html>
