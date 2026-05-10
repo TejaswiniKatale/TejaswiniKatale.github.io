@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejaswini Katale</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 30px 25px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+      margin-bottom: 25px;
+    }
+
+    .profile-img {
+      width: 190px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+    }
+
+    .intro h1 {
+      font-size: 34px;
+      margin: 0 0 8px 0;
+      font-weight: normal;
+    }
+
+    .intro p {
+      margin: 6px 0;
+      font-size: 17px;
+    }
+
+    nav {
+      margin: 20px 0 35px 0;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin-right: 22px;
+      text-decoration: none;
+      color: #0056a6;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 38px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    h3 {
+      font-size: 19px;
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    a {
+      color: #0056a6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .project {
+      margin-bottom: 22px;
+    }
+
+    .small-text {
+      color: #555;
+      font-size: 15px;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+      padding-top: 15px;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-img {
+        width: 170px;
+        height: 210px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <img src="profile.jpg" alt="Profile photo" class="profile-img" />
+
+      <div class="intro">
+        <h1>Tejaswini Katale</h1>
+        <p>Master's Student in Computer Science</p>
+        <p>University of Houston</p>
+        <p>Research Assistant, Department of Civil and Environmental Engineering</p>
+        <p class="small-text">
+          Research interests: AI/ML for transportation systems, cyber-resilience, aviation safety,
+          spatio-temporal learning, and large language models.
+        </p>
+        <p>
+          <a href="mailto:your-email@uh.edu">Email</a> |
+          <a href="https://github.com/TejaswiniKatale">GitHub</a> |
+          <a href="#">LinkedIn</a> |
+          <a href="#">Google Scholar</a> |
+          <a href="#">CV</a>
+        </p>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Master's student in Computer Science at the University of Houston and a Research
+        Assistant working with Prof. Lu Gao in the Department of Civil and Environmental Engineering.
+        My research focuses on developing AI-enabled systems for transportation cyber-resilience,
+        aviation safety analytics, and intelligent infrastructure.
+      </p>
+
+      <p>
+        My current work explores machine learning, simulation, and large language models for improving
+        the resilience and safety of transportation systems. I am particularly interested in anomaly
+        detection, airport terminal cyber-resilience, spatio-temporal modeling, and decision-support
+        systems for critical infrastructure.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>AI/ML for transportation systems</li>
+        <li>Cyber-resilience of critical infrastructure</li>
+        <li>Aviation safety and ADS-B anomaly detection</li>
+        <li>Spatio-temporal graph learning</li>
+        <li>Large language models and retrieval-augmented generation</li>
+        <li>Simulation-based resilience modeling</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>
+        Manuscripts under preparation.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Airport Terminal Cyber-Resilience under Cyber-Induced Disruptions.</strong>
+          Manuscript in preparation.
+        </li>
+        <li>
+          <strong>TimesFM-based ADS-B Anomaly Detection for Aviation Cybersecurity.</strong>
+          Manuscript in preparation.
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+
+      <div class="project">
+        <h3>Airport Terminal Cyber-Resilience Simulation</h3>
+        <p>
+          Developed a hybrid simulation framework combining discrete-event simulation, pedestrian
+          movement modeling, and LLM-based passenger behavior to evaluate airport terminal resilience
+          under cyber-induced service disruptions.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>TimesFM-based ADS-B Anomaly Detection</h3>
+        <p>
+          Designed a machine learning framework using TimesFM forecasting features and a CNN classifier
+          head to detect spoofing, replay, saturation, and interpolation attacks in aircraft trajectory
+          data.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Deep Reinforcement Learning for Traffic Signal Control</h3>
+        <p>
+          Implemented a SUMO-based traffic signal control system using deep Q-learning and partial
+          vehicle detection to study intelligent traffic signal control.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>CareBridge: AI-Assisted Telehealth Workflow</h3>
+        <p>
+          Proposed an AI-assisted telehealth workflow integrating patient intake, injury analysis,
+          doctor recommendation, prescription support, and pharmacy access.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <h3>Research Assistant</h3>
+      <p class="small-text">University of Houston</p>
+      <p>
+        Working on AI/ML-based methods for transportation cyber-resilience, airport terminal simulation,
+        aviation anomaly detection, and intelligent infrastructure systems.
+      </p>
+
+      <h3>Master's Student in Computer Science</h3>
+      <p class="small-text">University of Houston</p>
+
+      <h3>B.E. Computer Engineering</h3>
+      <p class="small-text">Vishwakarma Institute of Technology, Pune</p>
+    </section>
+
+    <section id="awards">
+      <h2>Awards and Highlights</h2>
+      <ul>
+        <li>1st Place, Coogs for Energy Hackathon 2026</li>
+        <li>Presented research at the Second CYBER-CARE Annual Symposium, 2026</li>
+        <li>Research Assistant, University of Houston</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your-email@uh.edu">your-email@uh.edu</a></p>
+      <p>GitHub: <a href="https://github.com/TejaswiniKatale">github.com/TejaswiniKatale</a></p>
+      <p>LinkedIn: <a href="#">Add your LinkedIn link here</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 Tejaswini Katale. Last updated May 2026.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
