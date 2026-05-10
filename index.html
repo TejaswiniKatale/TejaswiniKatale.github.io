@@ -10,14 +10,14 @@
     body {
       margin: 0;
       background-color: #1f1f1f;
-      color: #d9d9d9;
+      color: #d8d8d8;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 20px;
-      line-height: 1.5;
+      font-size: 16px;
+      line-height: 1.45;
     }
 
     a {
-      color: #2aa6c8;
+      color: #1fa4c9;
       text-decoration: none;
     }
 
@@ -27,53 +27,55 @@
 
     .topbar {
       border-bottom: 1px solid #3a3a3a;
-      padding: 20px 0;
+      padding: 14px 0;
+      background-color: #1f1f1f;
     }
 
     .nav-container {
-      max-width: 1220px;
+      max-width: 1110px;
       margin: 0 auto;
+      padding: 0 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 35px;
     }
 
     .icons a {
-      color: #e6e6e6;
-      font-size: 34px;
-      margin-right: 10px;
+      color: #e2e2e2;
+      font-size: 24px;
+      margin-right: 8px;
       font-weight: bold;
     }
 
     .nav-links a {
       color: #d9d9d9;
-      margin-left: 24px;
-      font-size: 20px;
+      margin-left: 18px;
+      font-size: 16px;
     }
 
     .nav-links a.active {
-      color: #2aa6c8;
+      color: #1fa4c9;
     }
 
     .container {
-      max-width: 1220px;
+      max-width: 1110px;
       margin: 0 auto;
-      padding: 60px 35px;
+      padding: 48px 24px 30px;
     }
 
     .intro {
       display: grid;
       grid-template-columns: 1fr 340px;
-      gap: 60px;
+      gap: 54px;
       align-items: start;
     }
 
     h1 {
-      font-size: 52px;
-      margin: 0 0 10px 0;
+      font-size: 44px;
+      margin: 0 0 12px 0;
       font-weight: 300;
-      color: #e8e8e8;
+      color: #e6e6e6;
+      letter-spacing: -1px;
     }
 
     h1 strong {
@@ -82,23 +84,35 @@
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 34px;
       font-weight: 300;
-      color: #e8e8e8;
-      margin: 45px 0 25px;
+      color: #e6e6e6;
+      margin: 36px 0 22px;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: #e6e6e6;
+      margin: 0 0 4px;
     }
 
     p {
-      margin: 0 0 22px 0;
+      margin: 0 0 18px 0;
     }
 
     ul {
-      margin-top: 5px;
-      padding-left: 50px;
+      padding-left: 36px;
+      margin-top: 0;
+      margin-bottom: 20px;
     }
 
     li {
       margin-bottom: 5px;
+    }
+
+    strong {
+      color: #eeeeee;
     }
 
     .profile-img {
@@ -109,109 +123,143 @@
       background-color: #333;
     }
 
-    .news {
-      margin-top: 40px;
+    .section {
+      margin-top: 34px;
     }
 
     .news-row {
       display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 20px;
-      margin-bottom: 24px;
+      grid-template-columns: 190px 1fr;
+      gap: 18px;
+      margin-bottom: 19px;
     }
 
     .date {
-      font-weight: bold;
+      font-weight: 700;
       color: #ffffff;
-    }
-
-    .publications {
-      margin-top: 20px;
     }
 
     .pub {
       display: grid;
-      grid-template-columns: 290px 1fr;
-      gap: 38px;
-      margin-bottom: 55px;
+      grid-template-columns: 255px 1fr;
+      gap: 36px;
+      margin-bottom: 46px;
       align-items: start;
     }
 
     .pub-img-box {
-      width: 290px;
+      width: 255px;
     }
 
     .pub-label {
-      background-color: #2aa6c8;
+      background-color: #29a3c5;
       color: white;
       text-align: center;
-      font-weight: bold;
-      font-size: 16px;
+      font-weight: 700;
+      font-size: 14px;
       padding: 2px 0;
       border-radius: 5px 5px 0 0;
     }
 
     .pub-img {
-      width: 290px;
-      height: 125px;
+      width: 255px;
+      height: 118px;
       object-fit: cover;
       background-color: #eeeeee;
       display: block;
     }
 
     .pub-title {
-      font-weight: bold;
+      font-weight: 700;
       color: #e6e6e6;
-      margin-bottom: 5px;
+      font-size: 17px;
+      margin-bottom: 4px;
     }
 
     .pub-authors {
       color: #d0d0d0;
+      margin-bottom: 2px;
     }
 
     .pub-venue {
       font-style: italic;
       color: #d0d0d0;
+      margin-bottom: 4px;
+    }
+
+    .pub-note {
+      color: #d0d0d0;
+      margin-bottom: 6px;
     }
 
     .buttons {
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .buttons a {
       color: #e6e6e6;
       border: 1px solid #e6e6e6;
-      padding: 6px 20px;
-      font-size: 13px;
-      font-weight: bold;
+      padding: 5px 17px;
+      font-size: 12px;
+      font-weight: 700;
       margin-right: 8px;
       display: inline-block;
-      min-width: 45px;
+      min-width: 42px;
       text-align: center;
+    }
+
+    .project-row {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .project-name {
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .experience-row {
+      margin-bottom: 22px;
+    }
+
+    .experience-row .role {
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .experience-row .place {
+      color: #1fa4c9;
+    }
+
+    .experience-row .details {
+      color: #d0d0d0;
+      margin-top: 4px;
     }
 
     .footer-icons {
       text-align: center;
-      margin: 55px 0 20px;
+      margin: 50px 0 16px;
     }
 
     .footer-icons a {
       color: #e6e6e6;
-      font-size: 68px;
-      margin: 0 10px;
+      font-size: 54px;
+      margin: 0 8px;
       font-weight: bold;
     }
 
-    .small-note {
-      color: #aaa;
-      font-size: 16px;
+    .copyright {
       text-align: center;
-      margin-bottom: 40px;
+      color: #aaa;
+      font-size: 13px;
+      margin-bottom: 25px;
     }
 
     @media (max-width: 900px) {
       body {
-        font-size: 18px;
+        font-size: 15px;
       }
 
       .intro {
@@ -227,7 +275,8 @@
         grid-template-columns: 1fr;
       }
 
-      .news-row {
+      .news-row,
+      .project-row {
         grid-template-columns: 1fr;
       }
 
@@ -236,12 +285,20 @@
       }
 
       .nav-links {
-        margin-top: 15px;
+        margin-top: 12px;
       }
 
       .nav-links a {
         margin-left: 0;
-        margin-right: 15px;
+        margin-right: 14px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        font-size: 30px;
       }
     }
   </style>
@@ -261,7 +318,10 @@
 
       <div class="nav-links">
         <a href="#about" class="active">About</a>
+        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#">CV</a>
       </div>
     </div>
@@ -285,8 +345,15 @@
         <p>
           My research focuses on AI/ML for transportation systems, cyber-resilience,
           aviation safety analytics, and intelligent infrastructure. In particular, I work on
-          developing machine learning and simulation-based methods for understanding and improving
-          the resilience of transportation systems under disruptions.
+          developing machine learning, simulation, and data-driven methods for understanding
+          and improving the resilience of transportation systems under disruptions.
+        </p>
+
+        <p>
+          I am broadly interested in AI-enabled systems that support safer, smarter, and more
+          resilient transportation infrastructure. My current work spans airport terminal
+          cyber-resilience, ADS-B anomaly detection, spatio-temporal learning, and large
+          language model-based decision support.
         </p>
 
         <p>
@@ -307,19 +374,19 @@
             crash risk modeling, and intelligent infrastructure systems.
           </li>
           <li>
-            <strong>Large language models</strong> and retrieval-augmented generation for
-            knowledge management and AI-assisted decision support.
+            <strong>Large language models and RAG</strong> for knowledge management,
+            cyber-resilience analysis, and decision-support workflows.
           </li>
           <li>
-            <strong>Reinforcement learning</strong> for intelligent traffic signal control
+            <strong>Deep reinforcement learning</strong> for intelligent traffic signal control
             using SUMO-based simulation environments.
           </li>
         </ul>
 
         <p>
           Prior to my graduate studies, I completed my Bachelor's degree in Computer Engineering
-          from <a href="#">Vishwakarma Institute of Technology, Pune</a>, where I worked on projects
-          across machine learning, cybersecurity, healthcare analytics, and intelligent systems.
+          from <a href="#">Vishwakarma Institute of Technology, Pune</a>, where I worked on
+          projects across machine learning, cybersecurity, healthcare analytics, and intelligent systems.
         </p>
 
         <p>
@@ -332,7 +399,20 @@
       </div>
     </section>
 
-    <section class="news">
+    <section id="research" class="section">
+      <h2>Research Interests</h2>
+
+      <ul>
+        <li><strong>AI/ML for Transportation Systems:</strong> machine learning models for safety, resilience, and infrastructure analytics.</li>
+        <li><strong>Cyber-Resilience:</strong> modeling the impact of cyber-induced disruptions on transportation and airport operations.</li>
+        <li><strong>Aviation Safety Analytics:</strong> anomaly detection and attack detection using aircraft trajectory and ADS-B data.</li>
+        <li><strong>Spatio-temporal Learning:</strong> graph-based and time-series methods for transportation safety and mobility systems.</li>
+        <li><strong>Large Language Models:</strong> LLMs and retrieval-augmented generation for knowledge management and decision support.</li>
+        <li><strong>Simulation and Reinforcement Learning:</strong> simulation-based optimization and control for transportation systems.</li>
+      </ul>
+    </section>
+
+    <section class="section">
       <h2>News</h2>
 
       <div class="news-row">
@@ -351,7 +431,7 @@
       </div>
 
       <div class="news-row">
-        <div class="date">2025</div>
+        <div class="date">2026</div>
         <div>
           Working on TimesFM-based ADS-B anomaly detection for aviation cybersecurity.
         </div>
@@ -360,13 +440,20 @@
       <div class="news-row">
         <div class="date">2025</div>
         <div>
-          Developing hybrid simulation models for airport terminal cyber-resilience under
+          Developing a hybrid simulation framework for airport terminal cyber-resilience under
           cyber-induced disruptions.
+        </div>
+      </div>
+
+      <div class="news-row">
+        <div class="date">2025</div>
+        <div>
+          Implementing reinforcement learning-based traffic signal control using SUMO and deep Q-learning.
         </div>
       </div>
     </section>
 
-    <section id="publications" class="publications">
+    <section id="publications" class="section">
       <h2>Selected Publications</h2>
 
       <div class="pub">
@@ -384,6 +471,10 @@
           </div>
           <div class="pub-venue">
             Manuscript in preparation, 2026
+          </div>
+          <div class="pub-note">
+            Hybrid simulation framework integrating discrete-event simulation, pedestrian movement,
+            and LLM-based passenger behavior.
           </div>
           <div class="buttons">
             <a href="#">PDF</a>
@@ -409,6 +500,10 @@
           <div class="pub-venue">
             Manuscript in preparation, 2026
           </div>
+          <div class="pub-note">
+            Forecasting-based anomaly detection framework for spoofing, replay, saturation,
+            and interpolation attacks in aircraft trajectory data.
+          </div>
           <div class="buttons">
             <a href="#">PDF</a>
             <a href="#">CODE</a>
@@ -432,6 +527,9 @@
           <div class="pub-venue">
             SUMO-based implementation and replication study, 2026
           </div>
+          <div class="pub-note">
+            Deep Q-learning and partial vehicle detection for intelligent traffic signal control.
+          </div>
           <div class="buttons">
             <a href="#">CODE</a>
           </div>
@@ -454,13 +552,128 @@
           <div class="pub-venue">
             Research project, 2026
           </div>
+          <div class="pub-note">
+            AI-assisted telehealth workflow for patient intake, injury analysis, doctor recommendation,
+            prescription support, and pharmacy access.
+          </div>
           <div class="buttons">
             <a href="#">PDF</a>
             <a href="#">CODE</a>
           </div>
         </div>
       </div>
+    </section>
 
+    <section id="projects" class="section">
+      <h2>Selected Projects</h2>
+
+      <div class="project-row">
+        <div class="project-name">Airport Cyber-Resilience</div>
+        <div>
+          Designed a hybrid airport terminal simulation framework to evaluate disruptions in
+          check-in, security, and display/guidance systems under cyber-induced service degradation.
+        </div>
+      </div>
+
+      <div class="project-row">
+        <div class="project-name">ADS-B Attack Detection</div>
+        <div>
+          Developed a TimesFM-based anomaly detection pipeline for aircraft trajectory data,
+          targeting spoofing, replay, saturation, and interpolation attacks.
+        </div>
+      </div>
+
+      <div class="project-row">
+        <div class="project-name">Traffic Signal RL</div>
+        <div>
+          Implemented a SUMO and TraCI-based deep reinforcement learning system for intelligent
+          traffic signal control with partial vehicle detection.
+        </div>
+      </div>
+
+      <div class="project-row">
+        <div class="project-name">CareBridge</div>
+        <div>
+          Proposed an AI-assisted telehealth system integrating patient intake, injury understanding,
+          doctor recommendation, prescription workflows, and pharmacy support.
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="experience-row">
+        <div class="role">Research Assistant</div>
+        <div class="place">University of Houston · Department of Civil and Environmental Engineering</div>
+        <div class="details">
+          Working on AI/ML-based methods for transportation cyber-resilience, airport terminal simulation,
+          aviation anomaly detection, and intelligent infrastructure systems.
+        </div>
+      </div>
+
+      <div class="experience-row">
+        <div class="role">M.S. Computer Science</div>
+        <div class="place">University of Houston</div>
+        <div class="details">
+          Graduate studies focused on machine learning, intelligent systems, data-driven modeling,
+          and applied AI research.
+        </div>
+      </div>
+
+      <div class="experience-row">
+        <div class="role">B.E. Computer Engineering</div>
+        <div class="place">Vishwakarma Institute of Technology, Pune</div>
+        <div class="details">
+          Completed undergraduate work in computer engineering with projects across machine learning,
+          cybersecurity, healthcare analytics, and software systems.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Awards & Highlights</h2>
+
+      <div class="news-row">
+        <div class="date">2026</div>
+        <div>
+          1st Place, Coogs for Energy Hackathon 2026.
+        </div>
+      </div>
+
+      <div class="news-row">
+        <div class="date">2026</div>
+        <div>
+          Presented at the Second CYBER-CARE Annual Symposium, Embry-Riddle Aeronautical University.
+        </div>
+      </div>
+
+      <div class="news-row">
+        <div class="date">2025–Present</div>
+        <div>
+          Research Assistant at the University of Houston working on AI/ML for transportation systems.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+
+      <p>
+        Email: <a href="mailto:your-email@uh.edu">your-email@uh.edu</a>
+      </p>
+
+      <p>
+        GitHub: <a href="https://github.com/TejaswiniKatale">github.com/TejaswiniKatale</a>
+      </p>
+
+      <p>
+        LinkedIn: <a href="#">Add your LinkedIn link here</a>
+      </p>
+
+      <p>
+        Google Scholar: <a href="#">Add your Google Scholar link here</a>
+      </p>
     </section>
 
     <div class="footer-icons">
@@ -471,7 +684,7 @@
       <a href="#">𝕏</a>
     </div>
 
-    <div class="small-note">
+    <div class="copyright">
       © 2026 Tejaswini Katale
     </div>
 
