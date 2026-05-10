@@ -151,55 +151,16 @@
       width: 255px;
     }
 
-    .pub-label {
-      background-color: #29a3c5;
-      color: white;
-      text-align: center;
-      font-weight: 700;
-      font-size: 14px;
-      padding: 2px 0;
-      border-radius: 5px 5px 0 0;
+    .pub-img {
+      width: 255px;
+      height: 145px;
+      object-fit: contain;
+      background-color: #ffffff;
+      display: block;
+      border-radius: 3px;
+      cursor: pointer;
+      padding: 4px;
     }
-
-   .pub-img {
-  width: 255px;
-  height: 118px;
-  object-fit: cover;
-  background-color: #eeeeee;
-  display: block;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-    .image-popup {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding: 40px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  align-items: center;
-  justify-content: center;
-}
-
-.image-popup img {
-  max-width: 90%;
-  max-height: 85%;
-  border-radius: 4px;
-}
-
-.close-popup {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  color: #ffffff;
-  font-size: 42px;
-  font-weight: bold;
-  cursor: pointer;
-}
 
     .pub-title {
       font-weight: 700;
@@ -219,11 +180,6 @@
       margin-bottom: 4px;
     }
 
-    .pub-note {
-      color: #d0d0d0;
-      margin-bottom: 6px;
-    }
-
     .buttons {
       margin-top: 8px;
     }
@@ -238,6 +194,38 @@
       display: inline-block;
       min-width: 42px;
       text-align: center;
+    }
+
+    .image-popup {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      padding: 40px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-popup img {
+      max-width: 90%;
+      max-height: 85%;
+      border-radius: 4px;
+      background-color: #ffffff;
+      padding: 6px;
+    }
+
+    .close-popup {
+      position: absolute;
+      top: 25px;
+      right: 40px;
+      color: #ffffff;
+      font-size: 42px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     .project-row {
@@ -341,7 +329,7 @@
   <div class="topbar">
     <div class="nav-container">
       <div class="icons">
-        <a href="mailto:your-email@uh.edu">✉</a>
+        <a href="mailto:tkatale@cougarnet.uh.edu">✉</a>
         <a href="https://github.com/TejaswiniKatale">●</a>
         <a href="#">in</a>
         <a href="#">g</a>
@@ -366,31 +354,32 @@
 
         <p>M.S. Student in Computer Science, University of Houston</p>
 
-<p>
-  I am a Master's student in Computer Science at the <a href="https://www.uh.edu/">University of Houston</a>,
-  with expected graduation in May 2027. I am also a Research Assistant working with <a href="https://www.cive.uh.edu/construction-management/faculty/gao-lu">Prof. Lu Gao</a> in the Department of Civil and
-  Environmental Engineering.
-</p>
+        <p>
+          I am a Master's student in Computer Science at the
+          <a href="https://www.uh.edu/">University of Houston</a>, with expected graduation
+          in May 2027. I am also a Research Assistant working with
+          <a href="https://www.cive.uh.edu/construction-management/faculty/gao-lu">Prof. Lu Gao</a>
+          in the Department of Civil and Environmental Engineering.
+        </p>
 
-<p>
-  My research focuses on artificial intelligence and machine learning for real-world problems.
-  I work on AI-based methods for safety, reliability, and resilience, with current projects
-  in airport cyber-resilience, ADS-B anomaly detection, spatio-temporal learning, large
-  language models, and decision-support systems.
-</p>
+        <p>
+          My research focuses on artificial intelligence and machine learning for real-world problems.
+          I work on AI-based methods for safety, reliability, and resilience, with current projects
+          in airport cyber-resilience, ADS-B anomaly detection, spatio-temporal learning, large
+          language models, and decision-support systems.
+        </p>
 
-<p>
-  I hold a Bachelor's degree in Computer Engineering from
-  <a href="#">Vishwakarma Institute of Technology, Pune</a>.
-</p>
+        <p>
+          I hold a Bachelor's degree in Computer Engineering from
+          <a href="#">Vishwakarma Institute of Technology, Pune</a>.
+        </p>
 
-<p>
-  I am currently based in Texas. Outside of research, I enjoy running, traveling,
-  and writing poems. 
-  Fell free to connect and discuss research ideas, or ongoing
-  projects in AI, reach out at <a href="mailto:your-email@uh.edu">tkatale@cougarnet.uh.edu</a>.
-</p>
-        
+        <p>
+          I am currently based in Texas. Outside of research, I enjoy running, traveling,
+          and writing poems. Feel free to connect and discuss research ideas or ongoing
+          projects in AI. You can reach me at
+          <a href="mailto:tkatale@cougarnet.uh.edu">tkatale@cougarnet.uh.edu</a>.
+        </p>
       </div>
 
       <div>
@@ -398,147 +387,104 @@
       </div>
     </section>
 
-<section class="section">
-  <h2>News</h2>
+    <section class="section">
+      <h2>News</h2>
 
-  <div class="news-row">
-    <div class="date">May 7, 2026</div>
-    <div>
-      Selected for the CyberSTAR: CyberTraining for Secure Transportation and Reliable Autonomy
-      workshop, to be held from June 22–24, 2026.
-    </div>
-  </div>
+      <div class="news-row">
+        <div class="date">May 7, 2026</div>
+        <div>
+          Selected for the CyberSTAR: CyberTraining for Secure Transportation and Reliable Autonomy
+          workshop, to be held from June 22–24, 2026.
+        </div>
+      </div>
 
-  <div class="news-row">
-    <div class="date">Apr 15, 2026</div>
-    <div>
-    📌 Presented our work, “LLM-Guided Hybrid Simulation for Airport Cyber-Resilience Assessment,”
-      at the Second CYBER-CARE Annual Symposium 2026.
-    </div>
-  </div>
+      <div class="news-row">
+        <div class="date">Apr 15, 2026</div>
+        <div>
+          Presented our work, “LLM-Guided Hybrid Simulation for Airport Cyber-Resilience Assessment,”
+          at the Second CYBER-CARE Annual Symposium 2026.
+        </div>
+      </div>
 
-  <div class="news-row">
-    <div class="date">Apr 11, 2026</div>
-    <div>
-       Won 1st place at the Coogs for Energy Hackathon 2026. 
-    </div>
-  </div>
+      <div class="news-row">
+        <div class="date">Apr 11, 2026</div>
+        <div>
+          Won 1st place at the Coogs for Energy Hackathon 2026.
+        </div>
+      </div>
 
-  <div class="news-row">
-    <div class="date">Jan 2, 2026</div>
-    <div>
-     📌 Our paper, “Developing an AI Assistant for Knowledge Management and Workforce Training in State DOTs,”
-      is published in Electronics.
-    </div>
-  </div>
+      <div class="news-row">
+        <div class="date">Jan 2, 2026</div>
+        <div>
+          Our paper, “Developing an AI Assistant for Knowledge Management and Workforce Training in State DOTs,”
+          was published in Electronics.
+        </div>
+      </div>
 
-  <div class="news-row">
-    <div class="date">Aug 25, 2025</div>
-    <div>
-      Joined the M.S. in Computer Science program at the University of Houston.
-    </div>
-  </div>
-</section>
+      <div class="news-row">
+        <div class="date">Aug 25, 2025</div>
+        <div>
+          Joined the M.S. in Computer Science program at the University of Houston.
+        </div>
+      </div>
+    </section>
 
     <section id="publications" class="section">
       <h2>Publications</h2>
 
-<div class="pub-img-box">
-  <img
-    src="pub2.jpg"
-    alt="Airport cyber-resilience publication"
-    class="pub-img"
-    onclick="openPopup('pub2.jpg')"
-  />
-</div>
-  <div>
-    <div class="pub-title">
-      LLM-Guided Hybrid Simulation for Airport Cyber-Resilience Assessment
-    </div>
-    <div class="pub-authors">
-      Tejaswini Katale, Lu Gao, Dahai Liu, Yongxin Liu, Hongyun Chen
-    </div>
-    <div class="pub-venue">
-      Under Review, 2026
-    </div>
+      <div class="pub">
+        <div class="pub-img-box">
+          <img
+            src="pub2.png"
+            alt="Airport cyber-resilience publication"
+            class="pub-img"
+            onclick="openPopup('pub2.png')"
+          />
+        </div>
 
-    <div class="buttons">
-      <a href="#">WEBSITE</a>
-    </div>
-  </div>
-</div>
-  
-  <div class="pub">
-    <div class="pub-img-box">
-      <img src="pub1.jpg" alt="AI assistant publication" class="pub-img" />
-    </div>
+        <div>
+          <div class="pub-title">
+            LLM-Guided Hybrid Simulation for Airport Cyber-Resilience Assessment
+          </div>
+          <div class="pub-authors">
+            Tejaswini Katale, Lu Gao, Dahai Liu, Yongxin Liu, Hongyun Chen
+          </div>
+          <div class="pub-venue">
+            Under Review, 2026
+          </div>
+          <div class="buttons">
+            <a href="#">WEBSITE</a>
+          </div>
+        </div>
+      </div>
 
-    <div>
-      <div class="pub-title">
-        Developing an AI Assistant for Knowledge Management and Workforce Training in State DOTs
-      </div>
-      <div class="pub-authors">
-        Divija Amaram, Lu Gao, Gowtham Reddy Gudla, and Tejaswini Sanjay Katale
-      </div>
-      <div class="pub-venue">
-        Electronics, 15(1), 217, 2026
-      </div>
-      <div class="buttons">
-        <a href="https://doi.org/10.3390/electronics15010217">WEBSITE</a>
-      </div>
-    </div>
-  </div>
+      <div class="pub">
+        <div class="pub-img-box">
+          <img
+            src="pub1.jpg"
+            alt="AI assistant publication"
+            class="pub-img"
+            onclick="openPopup('pub1.jpg')"
+          />
+        </div>
 
-  <div class="pub">
-    <div class="pub-img-box">
-      <a href="pub2.jpg" target="_blank">
- <img
-  src="pub2.jpg"
-  alt="Airport cyber-resilience publication"
-  class="pub-img"
-  onclick="openPopup(this.src)"
-/>
-</a>
-    </div>
+        <div>
+          <div class="pub-title">
+            Developing an AI Assistant for Knowledge Management and Workforce Training in State DOTs
+          </div>
+          <div class="pub-authors">
+            Divija Amaram, Lu Gao, Gowtham Reddy Gudla, and Tejaswini Sanjay Katale
+          </div>
+          <div class="pub-venue">
+            Electronics, 15(1), 217, 2026
+          </div>
+          <div class="buttons">
+            <a href="https://doi.org/10.3390/electronics15010217">WEBSITE</a>
+          </div>
+        </div>
+      </div>
 
-    <div>
-      <div class="pub-title">
-        LLM-Guided Hybrid Simulation for Airport Cyber-Resilience Assessment
-      </div>
-      <div class="pub-authors">
-        Tejaswini Katale and Lu Gao
-      </div>
-      <div class="pub-venue">
-        Presented at the Second CYBER-CARE Annual Symposium, 2026
-      </div>
-      <div class="buttons">
-        <a href="#">WEBSITE</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="pub">
-    <div class="pub-img-box">
-      <img src="pub3.jpg" alt="ADS-B anomaly detection publication" class="pub-img" />
-    </div>
-
-    <div>
-      <div class="pub-title">
-        TimesFM-based ADS-B Anomaly Detection for Aviation Cybersecurity
-      </div>
-      <div class="pub-authors">
-        Tejaswini Katale
-      </div>
-      <div class="pub-venue">
-        Manuscript in preparation, 2026
-      </div>
-      <div class="buttons">
-        <a href="#">WEBSITE</a>
-      </div>
-    </div>
-  </div>
-
-</section>
+    </section>
 
     <section id="projects" class="section">
       <h2>Selected Projects</h2>
@@ -636,7 +582,7 @@
       <h2>Contact</h2>
 
       <p>
-        Email: <a href="mailto:your-email@uh.edu">your-email@uh.edu</a>
+        Email: <a href="mailto:tkatale@cougarnet.uh.edu">tkatale@cougarnet.uh.edu</a>
       </p>
 
       <p>
@@ -653,7 +599,7 @@
     </section>
 
     <div class="footer-icons">
-      <a href="mailto:your-email@uh.edu">✉</a>
+      <a href="mailto:tkatale@cougarnet.uh.edu">✉</a>
       <a href="https://github.com/TejaswiniKatale">●</a>
       <a href="#">in</a>
       <a href="#">g</a>
@@ -666,21 +612,21 @@
 
   </div>
 
-
   <div id="imagePopup" class="image-popup" onclick="closePopup()">
-  <span class="close-popup">&times;</span>
-  <img id="popupImage" src="" alt="Expanded publication image" />
-</div>
-  
-<script>
-  function openPopup(src) {
-    document.getElementById("popupImage").src = src;
-    document.getElementById("imagePopup").style.display = "flex";
-  }
+    <span class="close-popup">&times;</span>
+    <img id="popupImage" src="" alt="Expanded publication image" onclick="event.stopPropagation()" />
+  </div>
 
-  function closePopup() {
-    document.getElementById("imagePopup").style.display = "none";
-  }
-</script>
+  <script>
+    function openPopup(src) {
+      document.getElementById("popupImage").src = src;
+      document.getElementById("imagePopup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+
 </body>
 </html>
