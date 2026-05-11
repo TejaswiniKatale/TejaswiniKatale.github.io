@@ -7,6 +7,32 @@
   <title>Tejaswini Katale</title>
 
   <style>
+    .contact-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.contact-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 188, 255, 0.15);
+  border: 1px solid rgba(0, 188, 255, 0.35);
+  color: #00c8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.contact-icons a:hover {
+  background: rgba(0, 188, 255, 0.25);
+  transform: translateY(-2px);
+}
     body {
       margin: 0;
       background-color: #1f1f1f;
@@ -391,7 +417,7 @@
         <a href="#about" class="active">About</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Education</a>
         <a href="#">CV</a>
       </div>
     </div>
@@ -897,26 +923,27 @@
   </div>
 </section>
 
- 
-    <section class="section">
-      <h2>Contact</h2>
+<section class="section" id="contact">
+  <h2>Contact</h2>
 
-      <p>
-        Email: <a href="mailto:tkatale@cougarnet.uh.edu">tkatale@cougarnet.uh.edu</a>
-      </p>
+  <div class="contact-icons">
+    <a href="mailto:tkatale@cougarnet.uh.edu" target="_blank" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
 
-      <p>
-        GitHub: <a href="https://github.com/TejaswiniKatale">github.com/TejaswiniKatale</a>
-      </p>
+    <a href="https://github.com/TejaswiniKatale" target="_blank" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
 
-      <p>
-        LinkedIn: <a href="#">https://www.linkedin.com/in/tejaswini-katale/</a>
-      </p>
+    <a href="https://www.linkedin.com/in/tejaswini-katale/" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
 
-      <p>
-        Google Scholar: <a href="#">https://scholar.google.com/citations?user=Wqv1_7cAAAAJ&hl=en</a>
-      </p>
-    </section>
+    <a href="https://scholar.google.com/citations?user=Wqv1_7cAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </a>
+  </div>
+</section>
 
     <div class="copyright">
       © 2026 Tejaswini Katale
