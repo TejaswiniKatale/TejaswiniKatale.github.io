@@ -5,38 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Tejaswini Katale</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <style>
-    .contact-icons {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.contact-icons a {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: rgba(0, 188, 255, 0.15);
-  border: 1px solid rgba(0, 188, 255, 0.35);
-  color: #00c8ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.contact-icons a:hover {
-  background: rgba(0, 188, 255, 0.25);
-  transform: translateY(-2px);
-}
     body {
       margin: 0;
-      background-color: #1f1f1f;
-      color: #d8d8d8;
+      background-color: #ffffff;
+      color: #111827;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 16px;
       line-height: 1.45;
@@ -52,9 +28,9 @@
     }
 
     .topbar {
-      border-bottom: 1px solid #3a3a3a;
+      border-bottom: 1px solid #e5e7eb;
       padding: 14px 0;
-      background-color: #1f1f1f;
+      background-color: #ffffff;
     }
 
     .nav-container {
@@ -67,14 +43,14 @@
     }
 
     .icons a {
-      color: #e2e2e2;
+      color: #111827;
       font-size: 24px;
       margin-right: 8px;
       font-weight: bold;
     }
 
     .nav-links a {
-      color: #d9d9d9;
+      color: #111827;
       margin-left: 18px;
       font-size: 16px;
     }
@@ -100,26 +76,26 @@
       font-size: 36px;
       margin: 0 0 12px 0;
       font-weight: 300;
-      color: #e6e6e6;
+      color: #111827;
       letter-spacing: -1px;
     }
 
     h1 strong {
       font-weight: 800;
-      color: #ffffff;
+      color: #000000;
     }
 
     h2 {
       font-size: 34px;
       font-weight: 300;
-      color: #e6e6e6;
+      color: #111827;
       margin: 36px 0 22px;
       letter-spacing: -0.5px;
     }
 
     h3 {
       font-size: 18px;
-      color: #e6e6e6;
+      color: #111827;
       margin: 0 0 4px;
     }
 
@@ -138,7 +114,7 @@
     }
 
     strong {
-      color: #eeeeee;
+      color: #000000;
     }
 
     .profile-img {
@@ -146,7 +122,7 @@
       height: 450px;
       object-fit: cover;
       border-radius: 3px;
-      background-color: #333;
+      background-color: #f3f4f6;
     }
 
     .section {
@@ -162,7 +138,7 @@
 
     .date {
       font-weight: 700;
-      color: #ffffff;
+      color: #000000;
     }
 
     .pub {
@@ -190,19 +166,19 @@
 
     .pub-title {
       font-weight: 700;
-      color: #e6e6e6;
+      color: #111827;
       font-size: 17px;
       margin-bottom: 4px;
     }
 
     .pub-authors {
-      color: #d0d0d0;
+      color: #374151;
       margin-bottom: 2px;
     }
 
     .pub-venue {
       font-style: italic;
-      color: #d0d0d0;
+      color: #374151;
       margin-bottom: 4px;
     }
 
@@ -211,8 +187,8 @@
     }
 
     .buttons a {
-      color: #e6e6e6;
-      border: 1px solid #e6e6e6;
+      color: #1fa4c9;
+      border: 1px solid #1fa4c9;
       padding: 5px 17px;
       font-size: 12px;
       font-weight: 700;
@@ -220,6 +196,12 @@
       display: inline-block;
       min-width: 42px;
       text-align: center;
+    }
+
+    .buttons a:hover {
+      background-color: #1fa4c9;
+      color: #ffffff;
+      text-decoration: none;
     }
 
     .image-popup {
@@ -256,14 +238,49 @@
 
     .project-row {
       display: grid;
-      grid-template-columns: 190px 1fr;
-      gap: 18px;
-      margin-bottom: 20px;
+      grid-template-columns: 260px 1fr;
+      gap: 28px;
+      margin-bottom: 32px;
     }
 
     .project-name {
       font-weight: 700;
-      color: #ffffff;
+      color: #000000;
+    }
+
+    .project-content p {
+      margin: 0 0 14px 0;
+      line-height: 1.6;
+      color: #374151;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 16px 0;
+    }
+
+    .project-tags span {
+      display: inline-block;
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(0, 188, 255, 0.15);
+      color: #00a6d6;
+      border: 1px solid rgba(0, 188, 255, 0.35);
+      font-weight: 500;
+    }
+
+    .github-btn {
+      display: inline-block;
+      color: #1fa4c9;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .github-btn:hover {
+      text-decoration: underline;
     }
 
     .experience-row {
@@ -272,7 +289,7 @@
 
     .experience-row .role {
       font-weight: 700;
-      color: #ffffff;
+      color: #000000;
     }
 
     .experience-row .place {
@@ -280,26 +297,42 @@
     }
 
     .experience-row .details {
-      color: #d0d0d0;
+      color: #374151;
       margin-top: 4px;
     }
 
-    .footer-icons {
-      text-align: center;
-      margin: 50px 0 16px;
+    .contact-icons {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-top: 16px;
     }
 
-    .footer-icons a {
-      color: #e6e6e6;
-      font-size: 54px;
-      margin: 0 8px;
-      font-weight: bold;
+    .contact-icons a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(0, 188, 255, 0.15);
+      border: 1px solid rgba(0, 188, 255, 0.35);
+      color: #00a6d6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .contact-icons a:hover {
+      background: rgba(0, 188, 255, 0.25);
+      transform: translateY(-2px);
     }
 
     .copyright {
       text-align: center;
-      color: #aaa;
+      color: #6b7280;
       font-size: 13px;
+      margin-top: 50px;
       margin-bottom: 25px;
     }
 
@@ -347,57 +380,6 @@
         font-size: 30px;
       }
     }
-
-
-
-.project-row {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 28px;
-  margin-bottom: 32px;
-}
-
-.project-name {
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.project-content p {
-  margin: 0 0 14px 0;
-  line-height: 1.6;
-  color: #f3f4f6;
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 10px 0 16px 0;
-}
-
-.project-tags span {
-  display: inline-block;
-  font-size: 13px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(0, 188, 255, 0.15);
-  color: #00c8ff;
-  border: 1px solid rgba(0, 188, 255, 0.35);
-  font-weight: 500;
-}
-
-.github-btn {
-  display: inline-block;
-  color: #00c8ff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.github-btn:hover {
-  text-decoration: underline;
-}
-
-    
   </style>
 </head>
 
@@ -408,8 +390,8 @@
       <div class="icons">
         <a href="mailto:tkatale@cougarnet.uh.edu">✉</a>
         <a href="https://github.com/TejaswiniKatale">●</a>
-        <a href="#">in</a>
-        <a href="#">g</a>
+        <a href="https://www.linkedin.com/in/tejaswini-katale/">in</a>
+        <a href="https://scholar.google.com/citations?user=Wqv1_7cAAAAJ&hl=en">g</a>
         <a href="#">𝕏</a>
       </div>
 
@@ -535,8 +517,6 @@
         </div>
       </div>
 
-
-      
       <div class="pub">
         <div class="pub-img-box">
           <img
@@ -562,14 +542,12 @@
           </div>
         </div>
       </div>
-   
-      
 
-            <div class="pub">
+      <div class="pub">
         <div class="pub-img-box">
           <img
             src="pub3.jpg"
-            alt="AI assistant publication"
+            alt="Pima Diabetes publication"
             class="pub-img"
             onclick="openPopup('pub3.jpg')"
           />
@@ -580,10 +558,10 @@
             Skewness based Outlier Elimination Algorithm for Pima Diabetes Dataset
           </div>
           <div class="pub-authors">
-          Pushkar Joglekar, Tejaswini Katale, Surabhi Deshpande, Saurabh Kelgandre, Aishwarya Katale, and Aakash Chotrani
+            Pushkar Joglekar, Tejaswini Katale, Surabhi Deshpande, Saurabh Kelgandre, Aishwarya Katale, and Aakash Chotrani
           </div>
           <div class="pub-venue">
-          Grenze International Journal of Engineering and Technology, 2025
+            Grenze International Journal of Engineering and Technology, 2025
           </div>
           <div class="buttons">
             <a href="https://www.researchgate.net/publication/388819746_Skewness_based_Outlier_Elimination_Algorithm_for_Pima_Diabetes_Dataset">WEBSITE</a>
@@ -591,13 +569,11 @@
         </div>
       </div>
 
-      
-
-            <div class="pub">
+      <div class="pub">
         <div class="pub-img-box">
           <img
             src="pub4.jpg"
-            alt="AI assistant publication"
+            alt="Pulsar Stars publication"
             class="pub-img"
             onclick="openPopup('pub4.jpg')"
           />
@@ -619,20 +595,11 @@
         </div>
       </div>
 
-      
-
-
-
-
-
-
-
-
-            <div class="pub">
+      <div class="pub">
         <div class="pub-img-box">
           <img
             src="pub5.jpg"
-            alt="AI assistant publication"
+            alt="Dense Clusters publication"
             class="pub-img"
             onclick="openPopup('pub5.jpg')"
           />
@@ -654,15 +621,11 @@
         </div>
       </div>
 
-
-
-
-
-                  <div class="pub">
+      <div class="pub">
         <div class="pub-img-box">
           <img
             src="pub6.jpg"
-            alt="AI assistant publication"
+            alt="Recession Forecasting publication"
             class="pub-img"
             onclick="openPopup('pub6.jpg')"
           />
@@ -684,21 +647,11 @@
         </div>
       </div>
 
-
-      
-
-      
-
-
-
-
-      
-
-                  <div class="pub">
+      <div class="pub">
         <div class="pub-img-box">
           <img
             src="pub7.jpg"
-            alt="AI assistant publication"
+            alt="Data Reduction publication"
             class="pub-img"
             onclick="openPopup('pub7.jpg')"
           />
@@ -720,19 +673,11 @@
         </div>
       </div>
 
-
-
-
-
-
-
-
-      
-                  <div class="pub">
+      <div class="pub">
         <div class="pub-img-box">
           <img
             src="pub8.jpg"
-            alt="AI assistant publication"
+            alt="Cluster Creation publication"
             class="pub-img"
             onclick="openPopup('pub8.jpg')"
           />
@@ -754,196 +699,186 @@
         </div>
       </div>
 
-      
-      
-      
     </section>
 
     <section id="projects" class="section">
       <h2>Selected Projects</h2>
 
       <div class="project-row">
-  <div class="project-name">Dueling DQN for Traffic Signal Control</div>
+        <div class="project-name">Dueling DQN for Traffic Signal Control</div>
 
-  <div class="project-content">
-    <p>
-      Implemented a deep reinforcement learning framework for adaptive traffic signal
-      control using SUMO and TraCI. The project models a four-way signalized intersection
-      and trains a Dueling Double DQN agent to optimize signal phase decisions under
-      full and partial vehicle detection scenarios.
-    </p>
+        <div class="project-content">
+          <p>
+            Implemented a deep reinforcement learning framework for adaptive traffic signal
+            control using SUMO and TraCI. The project models a four-way signalized intersection
+            and trains a Dueling Double DQN agent to optimize signal phase decisions under
+            full and partial vehicle detection scenarios.
+          </p>
 
-    <div class="project-tags">
-      <span>Deep Reinforcement Learning</span>
-      <span>Dueling Double DQN</span>
-      <span>SUMO</span>
-      <span>TraCI</span>
-      <span>Traffic Signal Control</span>
-      <span>Partial Detection</span>
-    </div>
+          <div class="project-tags">
+            <span>Deep Reinforcement Learning</span>
+            <span>Dueling Double DQN</span>
+            <span>SUMO</span>
+            <span>TraCI</span>
+            <span>Traffic Signal Control</span>
+            <span>Partial Detection</span>
+          </div>
 
-    <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
-      GitHub Repo
-    </a>
-  </div>
-</div>
-      
-
-<div class="project-row">
-  <div class="project-name">ADS-B Cyberattack Detection using TimesFM 2.5</div>
-
-  <div class="project-content">
-    <p>
-      Developed an aviation cyberattack detection framework using Google's TimesFM 2.5
-      time-series foundation model and a CNN-based classifier head. The system analyzes
-      ADS-B aircraft trajectory data to detect spoofing, replay, saturation, and
-      interpolation attacks using window-based time-series modeling and attack-specific
-      evaluation metrics.
-    </p>
-
-    <div class="project-tags">
-      <span>Time Series</span>
-      <span>Cyberattacks</span>
-      <span>Deep Learning</span>
-      <span>TimesFM 2.5</span>
-      <span>ADS-B</span>
-      <span>Aviation</span>
-    </div>
-
-    <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
-      GitHub Repo
-    </a>
-  </div>
-</div>
-
-
-
-<div class="project-row">
-  <div class="project-name">LLM-Guided Cyber-Resilience Modeling for Airport Terminal Operations</div>
-
-  <div class="project-content">
-    <p>
-      Designed an LLM-guided hybrid simulation architecture for analyzing airport
-      terminal performance under cyber disruptions affecting check-in, security, and
-      passenger information systems. The model combines DES-based service queues,
-      pedestrian movement simulation, and LLM-generated behavioral parameters to
-      quantify throughput degradation, queue growth, passenger delay, congestion, and
-      resilience under single and combined disruption scenarios.
-    </p>
-
-    <div class="project-tags">
-      <span>Large Language Models</span>
-      <span>Hybrid Simulation</span>
-      <span>Discrete-Event Simulation</span>
-      <span>Queue Modeling</span>
-      <span>Pedestrian Simulation</span>
-      <span>Airport Cyber-Resilience</span>
-    </div>
-
-    <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
-      GitHub Repo
-    </a>
-  </div>
-</div>
-       
-      
+          <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
 
       <div class="project-row">
-  <div class="project-name">Upstream-Aware Spatio-Temporal GNN for Crash Forecasting</div>
+        <div class="project-name">ADS-B Cyberattack Detection using TimesFM 2.5</div>
 
-  <div class="project-content">
-    <p>
-      Designed a spatio-temporal graph learning framework for segment-level crash risk
-      forecasting. The model integrates GraphSAGE-based neighborhood aggregation,
-      directional upstream attention, adaptive gated fusion, and temporal sequence
-      modeling to learn roadway safety patterns and predict future crash risk.
-    </p>
+        <div class="project-content">
+          <p>
+            Developed an aviation cyberattack detection framework using Google's TimesFM 2.5
+            time-series foundation model and a CNN-based classifier head. The system analyzes
+            ADS-B aircraft trajectory data to detect spoofing, replay, saturation, and
+            interpolation attacks using window-based time-series modeling and attack-specific
+            evaluation metrics.
+          </p>
 
-    <div class="project-tags">
-     <span>ST-GNN</span>
-   <span>GRU Temporal Encoder</span>
-   <span>Attention Mechanism</span>
-   <span>Adaptive Gated Fusion</span>
-   <span>Crash Risk Modeling</span>
-    </div>
+          <div class="project-tags">
+            <span>Time Series</span>
+            <span>Cyberattacks</span>
+            <span>Deep Learning</span>
+            <span>TimesFM 2.5</span>
+            <span>ADS-B</span>
+            <span>Aviation</span>
+          </div>
 
-    <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
-      GitHub Repo
-    </a>
-  </div>
-</div>
+          <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
 
-      
-<div class="project-row">
-  <div class="project-name">LLM-Based Pavement Safety Analysis</div>
+      <div class="project-row">
+        <div class="project-name">LLM-Guided Cyber-Resilience Modeling for Airport Terminal Operations</div>
 
-  <div class="project-content">
-    <p>
-      Developed a zero-shot, prompt-driven framework using open-weight large language
-      models to extract pavement-related crash mechanisms from unstructured police crash
-      narratives. The study evaluates compact LLMs for identifying hydroplaning, potholes,
-      rough pavement, and curve-related loss of control, supporting data-driven pavement
-      safety analysis without task-specific fine-tuning.
-    </p>
+        <div class="project-content">
+          <p>
+            Designed an LLM-guided hybrid simulation architecture for analyzing airport
+            terminal performance under cyber disruptions affecting check-in, security, and
+            passenger information systems. The model combines DES-based service queues,
+            pedestrian movement simulation, and LLM-generated behavioral parameters to
+            quantify throughput degradation, queue growth, passenger delay, congestion, and
+            resilience under single and combined disruption scenarios.
+          </p>
 
-    <div class="project-tags">
-      <span>Large Language Models</span>
-      <span>Open-Weight LLMs</span>
-      <span>Zero-Shot Classification</span>
-      <span>Prompt Engineering</span>
-      <span>Crash Narrative Mining</span>
-      <span>NLP</span>
-    </div>
+          <div class="project-tags">
+            <span>Large Language Models</span>
+            <span>Hybrid Simulation</span>
+            <span>Discrete-Event Simulation</span>
+            <span>Queue Modeling</span>
+            <span>Pedestrian Simulation</span>
+            <span>Airport Cyber-Resilience</span>
+          </div>
 
-    <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
-      GitHub Repo
-    </a>
-  </div>
-</div>
+          <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
 
+      <div class="project-row">
+        <div class="project-name">Upstream-Aware Spatio-Temporal GNN for Crash Forecasting</div>
 
+        <div class="project-content">
+          <p>
+            Designed a spatio-temporal graph learning framework for segment-level crash risk
+            forecasting. The model integrates GraphSAGE-based neighborhood aggregation,
+            directional upstream attention, adaptive gated fusion, and temporal sequence
+            modeling to learn roadway safety patterns and predict future crash risk.
+          </p>
 
-<section id="experience" class="section">
-  <h2>Education</h2>
+          <div class="project-tags">
+            <span>ST-GNN</span>
+            <span>GRU Temporal Encoder</span>
+            <span>Attention Mechanism</span>
+            <span>Adaptive Gated Fusion</span>
+            <span>Crash Risk Modeling</span>
+          </div>
 
-  <div class="experience-row">
-    <div class="role">M.S. in Computer Science</div>
-    <div class="place">University of Houston</div>
-    <div class="details">
-      2025 – 2027
-    </div>
-  </div>
+          <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
 
-  <div class="experience-row">
-    <div class="role">B.E. in Computer Engineering</div>
-    <div class="place">Vishwakarma Institute of Technology, Pune</div>
-    <div class="details">
-      2020 – 2024
-    </div>
-  </div>
-</section>
+      <div class="project-row">
+        <div class="project-name">LLM-Based Pavement Safety Analysis</div>
 
-<section class="section" id="contact">
-  <h2>Contact</h2>
+        <div class="project-content">
+          <p>
+            Developed a zero-shot, prompt-driven framework using open-weight large language
+            models to extract pavement-related crash mechanisms from unstructured police crash
+            narratives. The study evaluates compact LLMs for identifying hydroplaning, potholes,
+            rough pavement, and curve-related loss of control, supporting data-driven pavement
+            safety analysis without task-specific fine-tuning.
+          </p>
 
-  <div class="contact-icons">
-    <a href="mailto:tkatale@cougarnet.uh.edu" target="_blank" aria-label="Email">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
+          <div class="project-tags">
+            <span>Large Language Models</span>
+            <span>Open-Weight LLMs</span>
+            <span>Zero-Shot Classification</span>
+            <span>Prompt Engineering</span>
+            <span>Crash Narrative Mining</span>
+            <span>NLP</span>
+          </div>
 
-    <a href="https://github.com/TejaswiniKatale" target="_blank" aria-label="GitHub">
-      <i class="fa-brands fa-github"></i>
-    </a>
+          <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="github-btn">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <a href="https://www.linkedin.com/in/tejaswini-katale/" target="_blank" aria-label="LinkedIn">
-      <i class="fa-brands fa-linkedin-in"></i>
-    </a>
+    <section id="experience" class="section">
+      <h2>Education</h2>
 
-    <a href="https://scholar.google.com/citations?user=Wqv1_7cAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
-      <i class="fa-solid fa-graduation-cap"></i>
-    </a>
-  </div>
-</section>
+      <div class="experience-row">
+        <div class="role">M.S. in Computer Science</div>
+        <div class="place">University of Houston</div>
+        <div class="details">
+          2025 – 2027
+        </div>
+      </div>
+
+      <div class="experience-row">
+        <div class="role">B.E. in Computer Engineering</div>
+        <div class="place">Vishwakarma Institute of Technology, Pune</div>
+        <div class="details">
+          2020 – 2024
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+
+      <div class="contact-icons">
+        <a href="mailto:tkatale@cougarnet.uh.edu" target="_blank" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://github.com/TejaswiniKatale" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/tejaswini-katale/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://scholar.google.com/citations?user=Wqv1_7cAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </a>
+      </div>
+    </section>
 
     <div class="copyright">
       © 2026 Tejaswini Katale
