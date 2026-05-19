@@ -69,20 +69,30 @@
 
     .nav-links a {
       color: #111827;
-      margin-left: 18px;
+      margin-left: 10px;
       font-size: 15px;
       font-weight: 500;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1.5px solid transparent;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.2s ease;
     }
 
-.nav-links a.active {
-  color: #ffffff;
-  background-color: #0b3d91;
-  border: 1.5px solid #0b3d91;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-weight: 700;
-  text-decoration: none;
-}
+    .nav-links a:hover {
+      color: #0b3d91;
+      border-color: #0b3d91;
+      text-decoration: none;
+    }
+
+    .nav-links a.active {
+      color: #ffffff;
+      background-color: #0b3d91;
+      border-color: #0b3d91;
+      font-weight: 700;
+      text-decoration: none;
+    }
 
     .container {
       max-width: 1110px;
@@ -187,6 +197,10 @@
   transform: translateY(-2px);
   text-decoration: none;
 }
+
+    section {
+      scroll-margin-top: 90px;
+    }
 
     .section {
       margin-top: 34px;
@@ -459,7 +473,7 @@
       </div>
 
      <div class="nav-links">
-  <a href="#about" class="active">About</a>
+  <a href="#about">About</a>
   <a href="#news">News</a>
   <a href="#publications">Publications</a>
   <a href="#projects">Projects</a>
@@ -512,7 +526,7 @@
         <div class="current-research">
           <p><strong>Research Interests:</strong></p>
           <ul>
-             <li>Human Centered AI</li>
+             <li>Human-Centered AI</li>
              <li>AI for Better Decision Making</li>
              <li>AI for Cyber-Physical Systems</li>
           </ul>
@@ -1148,8 +1162,6 @@
   </div>
 
   <script>
-
-
   function openPopup(src) {
     document.getElementById("popupImage").src = src;
     document.getElementById("imagePopup").style.display = "flex";
@@ -1160,43 +1172,49 @@
   }
 
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-links a");
+  const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
 
-  function updateActiveNav() {
-    let current = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 130;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
+  function setActiveNav(sectionId) {
     navLinks.forEach(link => {
       link.classList.remove("active");
 
-      if (link.getAttribute("href") === "#" + current) {
+      if (link.getAttribute("href") === "#" + sectionId) {
         link.classList.add("active");
       }
     });
   }
 
+  function updateActiveNav() {
+    let current = "about";
+    const scrollPosition = window.scrollY + 140;
+    const bottomPosition = window.innerHeight + window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    sections.forEach(section => {
+      if (scrollPosition >= section.offsetTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    /* This fixes the issue where Service is near the bottom,
+       so the browser cannot scroll far enough to make it active normally. */
+    if (bottomPosition >= pageHeight - 5) {
+      current = "service";
+    }
+
+    setActiveNav(current);
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      const sectionId = this.getAttribute("href").replace("#", "");
+      setActiveNav(sectionId);
+    });
+  });
+
   window.addEventListener("scroll", updateActiveNav);
   window.addEventListener("load", updateActiveNav);
-
-    
-
-
-    
-    function openPopup(src) {
-      document.getElementById("popupImage").src = src;
-      document.getElementById("imagePopup").style.display = "flex";
-    }
-
-    function closePopup() {
-      document.getElementById("imagePopup").style.display = "none";
-    }
-  </script>
+</script>
 
 </body>
 </html>
