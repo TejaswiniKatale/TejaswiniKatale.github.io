@@ -62,9 +62,42 @@
     }
 
     .site-name {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sun-icon {
+      background-color: #f97316;
+      color: #ffffff;
+      font-size: 15px;
+    }
+
+    .brand-text {
+      color: #111827;
       font-size: 16px;
       font-weight: 600;
-      color: #111827;
+      line-height: 1;
     }
 
     .nav-links a {
@@ -469,7 +502,12 @@
   <div class="topbar">
     <div class="nav-container">
       <div class="site-name">
-        Tejaswini Katale
+        <a href="#about" class="brand">
+          <span class="brand-icon sun-icon">
+            <i class="fa-solid fa-sun"></i>
+          </span>
+          <span class="brand-text">Tejaswini Katale</span>
+        </a>
       </div>
 
      <div class="nav-links">
