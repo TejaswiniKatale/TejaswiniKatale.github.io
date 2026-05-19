@@ -1150,7 +1150,7 @@
   <script>
 
 
-      function openPopup(src) {
+  function openPopup(src) {
     document.getElementById("popupImage").src = src;
     document.getElementById("imagePopup").style.display = "flex";
   }
@@ -1160,16 +1160,14 @@
   }
 
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
+  const navLinks = document.querySelectorAll(".nav-links a");
 
-  window.addEventListener("scroll", () => {
+  function updateActiveNav() {
     let current = "";
 
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.offsetHeight;
-
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      const sectionTop = section.offsetTop - 130;
+      if (window.scrollY >= sectionTop) {
         current = section.getAttribute("id");
       }
     });
@@ -1181,7 +1179,14 @@
         link.classList.add("active");
       }
     });
-  });
+  }
+
+  window.addEventListener("scroll", updateActiveNav);
+  window.addEventListener("load", updateActiveNav);
+
+    
+
+
     
     function openPopup(src) {
       document.getElementById("popupImage").src = src;
