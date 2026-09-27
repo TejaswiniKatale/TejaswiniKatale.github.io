@@ -19,14 +19,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 
 <style>
-    body {
-      margin: 0;
-      background-color: #F5F0E8;
-      color: #111827;
-      font-family: "Bodoni MT", "Bodoni 72", "Playfair Display", Didot, Georgia, serif;
-      font-size: 19px;
-      line-height: 1.38;
-    }
+  body {
+  margin: 0;
+  background-color: #F6F1EB;
+  color: #3E2F26;
+  font-family: "Bodoni MT", "Bodoni 72", "Playfair Display", Didot, Georgia, serif;
+  font-size: 19px;
+  line-height: 1.38;
+}
 
 .buttons a.github-green {
   color: #14532d;
@@ -50,13 +50,13 @@
     }
 
 .topbar {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #E3D6C8;
   padding: 14px 0;
-  background-color: #F5F0E8;
+  background-color: #F6F1EB;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 
     .nav-container {
@@ -568,18 +568,31 @@
         margin-bottom: 6px;
       }
 
-      .intro {
-        grid-template-columns: 1fr;
-      }
+   .intro {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 48px;
+  align-items: start;
+}
 
-      .profile-side {
-        width: 260px;
-      }
+.intro > div:first-child {
+  order: 2;
+}
 
-      .profile-img {
-        width: 240px;
-        height: 240px;
-      }
+.profile-side {
+  width: 270px;
+  text-align: left;
+  order: 1;
+}
+
+.profile-img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;   /* square with slight softness */
+  background-color: #f3f4f6;
+  display: block;
+}
 
       .pub {
         grid-template-columns: 1fr;
