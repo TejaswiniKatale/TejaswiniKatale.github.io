@@ -663,6 +663,18 @@
       color: #374151;
     }
 
+  /* Soft brown text highlight */
+.brown-highlight {
+  background: linear-gradient(
+    transparent 35%,
+    #D8B8A5 35%,
+    #D8B8A5 88%,
+    transparent 88%
+  );
+  color: #3E2F26;
+  font-weight: 600;
+  padding: 0 3px;
+}
 .selected-publications-heading { color: #5A3A2E; font-weight: 400; margin: 0; }
 .section-heading-row { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; margin: 36px 0 22px; }
 .full-list-link { font-size: 18px; color: #374151; white-space: nowrap; }
@@ -1326,7 +1338,7 @@ body::after {
 
   
 <p>
-  Hi, I am a Master’s in Computer Science (Thesis) student at the 
+  Hi, I am a <span class="brown-highlight">Master’s in Computer Science (Thesis)</span> student at the 
   <a href="https://www.uh.edu/">University of Houston</a> graduating in May 2027. I am also a Research Assistant working at 
   the CyberCARE Lab (U.S Department of Transportation) with
   <a href="https://www.cive.uh.edu/construction-management/faculty/gao-lu">Prof. Lu Gao</a> in the Department of Civil and Environmental Engineering.
