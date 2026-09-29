@@ -74,27 +74,41 @@ body {
   color: #5A3A2E;
   white-space: nowrap;
 }
+.nav-links a {
+  color: #3E2F26;
+  margin-left: 8px;
+  font-size: 21px;
+  font-weight: 500;
 
-    .nav-links a {
-      color: #111827;
-      margin-left: 10px;
-      font-size: 21px;
-      font-weight: 500;
-      display: inline-block;
-      padding: 5px 10px;
-      border: 1.5px solid transparent;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: 0.2s ease;
-    }
+  display: inline-block;
+  padding: 7px 13px;
 
-    .nav-links a:hover {
-      color: #5A3A2E;
-      border-color: transparent;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 6px;
-    }
+  background-color: #EFE3D8;
+  border: 1px solid #E1CDBE;
+  border-radius: 7px;
+
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+
+/* Hover */
+.nav-links a:hover {
+  color: #3E2F26;
+  background-color: #E4D0C1;
+  border-color: #D5B9A6;
+  text-decoration: none !important;
+}
+
+/* Currently selected section */
+.nav-links a.active {
+  color: #3E2F26;
+  background-color: #D3B29D;
+  border-color: #C49D84;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+  
 /* White publication information card */
 .pub-meta-card {
   background: #ffffff;
