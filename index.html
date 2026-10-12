@@ -1535,6 +1535,78 @@ body::after {
 .project-link:hover {
   color: #1d4ed8 !important;
 }
+
+
+/* =========================================================
+   LIFE OFFLINE — NEW SECTION ONLY
+   ========================================================= */
+#life-offline h2 {
+  color: #5A3A2E !important;
+}
+
+.life-offline-intro {
+  color: #5A3A2E;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.life-offline-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.life-offline-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #E7DED5;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(90, 58, 46, 0.06);
+}
+
+.life-offline-card img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  display: block;
+  background: #F3E9E2;
+}
+
+.life-offline-card-body {
+  padding: 18px 20px 22px;
+}
+
+.life-offline-card h3 {
+  color: #5A3A2E;
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 0 0 9px;
+  font-weight: 600;
+}
+
+.life-offline-card h3 i {
+  color: #A85D45;
+  font-size: 19px;
+  margin-right: 7px;
+}
+
+.life-offline-card p {
+  color: #3E2F26;
+  font-size: 18px;
+  line-height: 1.45;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .life-offline-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .life-offline-card img {
+    height: 210px;
+  }
+}
 </style>
 </head>
 
@@ -1552,6 +1624,7 @@ body::after {
     
       <a href="#publications"> Publications</a>
       <a href="#service">Service</a>
+      <a href="#life-offline">Life Offline</a>
       <a href="cv.pdf" target="_blank">CV</a>
     </div>
 
@@ -2320,6 +2393,63 @@ I have been lucky to have some amazing mentors throughout my journey, and I woul
 </section>
   
 
+
+<!-- Life Offline: personal interests (more content can be added later) -->
+<section class="section" id="life-offline">
+  <h2>Life Offline</h2>
+  <p class="life-offline-intro">A little glimpse of who I am when the laptop is closed.</p>
+
+  <div class="life-offline-grid">
+    <article class="life-offline-card">
+      <img
+        alt="Notebook, fountain pen, and handwritten poetry"
+        src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+        onerror="this.onerror=null;this.src='life-offline-poetry.svg';"
+        loading="lazy"/>
+      <div class="life-offline-card-body">
+        <h3><i class="fa-solid fa-feather" aria-hidden="true"></i>Between the Lines</h3>
+        <p>A little collection of poems, thoughts, and everything I sometimes find easier to express in words.</p>
+      </div>
+    </article>
+
+    <article class="life-offline-card">
+      <img
+        alt="Running along a scenic trail"
+        src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+        onerror="this.onerror=null;this.src='life-offline-running.svg';"
+        loading="lazy"/>
+      <div class="life-offline-card-body">
+        <h3><i class="fa-solid fa-person-running" aria-hidden="true"></i>Miles &amp; Smiles</h3>
+        <p>Recently started running and tracking my little adventures on Strava. Still figuring out the runner's high, lol!</p>
+      </div>
+    </article>
+
+    <article class="life-offline-card">
+      <img
+        alt="Dancing and enjoying music"
+        src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+        onerror="this.onerror=null;this.src='life-offline-dance.svg';"
+        loading="lazy"/>
+      <div class="life-offline-card-body">
+        <h3><i class="fa-solid fa-music" aria-hidden="true"></i>Just Play the Music</h3>
+        <p>No choreography needed. Just play a good song, and I'll probably be the first one dancing!</p>
+      </div>
+    </article>
+
+    <article class="life-offline-card">
+      <img
+        alt="Friends sharing a lively conversation"
+        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+        onerror="this.onerror=null;this.src='life-offline-chat.svg';"
+        loading="lazy"/>
+      <div class="life-offline-card-body">
+        <h3><i class="fa-solid fa-comments" aria-hidden="true"></i>Certified Chatterbox</h3>
+        <p>Extroverted by nature. I can talk for hours, and somehow, I'll get you talking for hours too!</p>
+      </div>
+    </article>
+  </div>
+</section>
+
 <div class="copyright">
 © 2026 Tejaswini Katale
 </div>
@@ -2366,7 +2496,7 @@ I have been lucky to have some amazing mentors throughout my journey, and I woul
     });
 
     if (bottomPosition >= pageHeight - 5) {
-      current = "service";
+      current = "life-offline";
     }
 
     setActiveNav(current);
