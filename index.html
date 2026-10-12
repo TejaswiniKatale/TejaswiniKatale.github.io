@@ -1232,25 +1232,22 @@ body::after {
   pointer-events: none;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: saturate(0.62) sepia(0.14) contrast(0.92);
+  /* Enhance side photographs without faded sepia or a white overlay. */
+  filter: contrast(1.7) saturate(1.3) brightness(0.86);
 }
 
 body::before {
   left: 0;
-  background-image:
-    linear-gradient(90deg, rgba(76, 53, 42, 0.20), rgba(246, 241, 235, 0.70)),
-    url("construction-left.jpg");
+  background-image: url("construction-left.jpg");
   background-position: center center;
-  box-shadow: inset -34px 0 45px rgba(246, 241, 235, 0.80);
+  box-shadow: none;
 }
 
 body::after {
   right: 0;
-  background-image:
-    linear-gradient(270deg, rgba(76, 53, 42, 0.20), rgba(246, 241, 235, 0.70)),
-    url("construction-right.jpg");
+  background-image: url("construction-right.jpg");
   background-position: center center;
-  box-shadow: inset 34px 0 45px rgba(246, 241, 235, 0.80);
+  box-shadow: none;
 }
 
 /* Keep the navigation above the background photographs. */
