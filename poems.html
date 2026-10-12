@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Between the Lines | Tejaswini Katale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root {--ink:#5A3A2E;--brown:#9a6b58;--paper:#fffbf3;--cream:#F6F1EB;}
+* {box-sizing:border-box;}
+html {scroll-behavior:smooth;}
+body {margin:0;background:#e8ddd2;color:#3E2F26;font-family:"Bodoni MT","Playfair Display",Georgia,serif;font-size:19px;}
+a {color:#795143;}
+a:focus-visible {outline:3px solid #ad8369;outline-offset:4px;}
+.topbar {position:sticky;top:0;z-index:9;background:rgba(246,241,235,.97);border-bottom:1px solid #ddcdbf;backdrop-filter:blur(8px);}
+.topbar-inner {max-width:1160px;margin:auto;padding:16px 27px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+.brand {font-size:22px;text-decoration:none;color:#5A3A2E;}
+.back {padding:8px 14px;border:1px solid #D8C1B2;background:#EFE3D8;border-radius:7px;text-decoration:none;font-size:16px;}
+.page {max-width:1120px;margin:auto;padding:35px 27px 100px;}
+.header {text-align:center;margin:35px auto 24px;}
+.header .eyebrow {font-size:13px;text-transform:uppercase;letter-spacing:3px;color:#97735f;}
+h1 {font-size:clamp(40px,6vw,65px);font-weight:500;letter-spacing:-.6px;margin:13px 0 8px;color:#5A3A2E;}
+.header p {color:#6f5545;font-style:italic;line-height:1.5;max-width:620px;margin:0 auto 26px;}
+.contents {display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin:12px 0 66px;}
+.contents a {padding:7px 12px;border-radius:22px;border:1px solid #d8c1b2;background:rgba(255,250,244,.73);font-size:15px;text-decoration:none;}
+.contents a:hover{background:#e9d8c9;}
+.sheet {position:relative;isolation:isolate;max-width:1020px;margin:0 auto 72px;padding:38px 54px 50px 85px;border-radius:4px;border:1px solid #d2c0a9;background:
+  linear-gradient(90deg,transparent 0 62px,rgba(193,105,102,.3) 62px 64px,transparent 64px),
+  repeating-linear-gradient(to bottom,transparent 0,transparent 33px,rgba(97,143,171,.16) 34px,transparent 35px),
+  linear-gradient(140deg,#fffdf7,#fff9ed 75%,#f9f0df);
+  box-shadow:0 7px 10px rgba(68,48,35,.06),0 22px 50px rgba(68,48,35,.10);
+  scroll-margin-top:95px;
+}
+.sheet::before,.sheet::after {content:"";position:absolute;top:-12px;width:82px;height:24px;background:rgba(216,194,164,.55);border-left:1px solid rgba(148,121,99,.18);border-right:1px solid rgba(148,121,99,.18);transform:rotate(-7deg);}
+.sheet::before {left:34px;}.sheet::after {right:34px;transform:rotate(7deg);}
+.sheet:nth-of-type(even)::before{transform:rotate(4deg);}
+.sheet-head {display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:125px;margin-bottom:12px;}
+.sheet-title-block {flex:1;}
+.poem-number {font-family:Georgia,serif;color:#aa8b72;font-size:13px;letter-spacing:2px;text-transform:uppercase;}
+h2 {color:#5A3A2E;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,4vw,37px);font-weight:600;margin:13px 0 0;line-height:1.2;}
+.doodle {width:195px;height:145px;flex-shrink:0;filter:drop-shadow(0 2px 1px rgba(81,49,35,.07));transform:rotate(3deg);}
+.doodle svg {display:block;width:100%;height:100%;stroke:#866d5b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none;}
+.poem-text {font-family:"Kalam","Segoe Print","Bradley Hand",Georgia,serif;font-size:clamp(18px,2.1vw,20px);font-weight:400;line-height:1.76;text-align:center;white-space:pre-wrap;overflow-wrap:break-word;margin:24px 0 0;padding-right:9px;color:#45352e;}
+.poem-signature {font-family:"Kalam",cursive;font-size:20px;text-align:right;color:#86624e;margin:23px 8px 0 0;}
+.foot {text-align:center;color:#6c5648;font-size:15px;line-height:1.5;margin-top:40px;}
+.foot a {font-weight:600;}
+@media(max-width:660px){.page{padding:24px 12px 70px;}.topbar-inner{padding:12px 16px;}.sheet{margin-bottom:50px;padding:34px 15px 32px 39px;background:linear-gradient(90deg,transparent 0 24px,rgba(193,105,102,.27) 24px 25px,transparent 25px),repeating-linear-gradient(to bottom,transparent 0,transparent 32px,rgba(97,143,171,.15) 33px,transparent 34px),#fffaf0;}.sheet::before,.sheet::after{width:50px;}.sheet-head{min-height:96px;}.doodle{width:112px;height:94px;}.poem-text{font-size:17px;line-height:1.65;padding:0 3px 0 0;}.header{margin:20px auto}.contents{margin-bottom:48px}.brand{font-size:18px}.back{font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+@media print{body{background:white}.topbar,.contents{display:none}.sheet{box-shadow:none;break-inside:avoid;page-break-inside:avoid;margin-bottom:16px}.page{padding:0}.header{margin:15px 0 25px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html">Tejaswini Katale</a><a class="back" href="index.html#life-offline">← Back to Life Offline</a></div></header>
+<main class="page">
+<div class="header"><div class="eyebrow">Life Offline · Poetry</div><h1>Between the Lines</h1><p>A little corner of poems, thoughts, and everything I sometimes find easier to express in words.</p></div>
+<nav class="contents" aria-label="Poem index">
+<a href="#die-to-breathe">Die to breathe</a>
+<a href="#love-for-hobby">Love for Hobby</a>
+<a href="#puzzle">Puzzle</a>
+<a href="#he-knows-when-to-call-you">He knows when to call you</a>
+<a href="#diamonds">Diamonds</a>
+<a href="#betrayal">Betrayal</a>
+<a href="#untitled">Untitled</a>
+<a href="#a-random-day">A Random Day</a>
+<a href="#question-mark">Question Mark?</a>
+</nav>
+<article class="sheet" id="die-to-breathe">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 01 / 09</span><h2>Die to breathe</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M79 20h86M79 145h86"/><path d="M88 23c-2 29 34 33 34 55s-36 26-34 65M156 23c2 29-34 33-34 55s36 26 34 65"/><path d="M99 49c19 13 30 13 46 0M101 129q21-30 43 0Z" fill="#d9b78e" fill-opacity=".62"/><path d="M122 75v27" stroke-dasharray="2 8"/><path d="M191 98q-23-9-25 14q23-3 25-14z" fill="#a6b391"/><path d="M166 112l-18 19"/></svg></div></div>
+<div class="poem-text">Time is escalating, age is rocketing
+
+Gazing at the sky  uttering no words,
+knowing  one day we will all be sleeping on a hearse
+
+Life paths by god designed ,
+feeling as if the childhood resigned
+
+Breathing the last seconds, he says
+
+Memories feels obscure,
+sorry but no chance to cure
+Tightly holding his hands asking for a divine tour
+
+burden on heart to leave,
+Yes, dying body is not a grieve
+but I choose soul to leve!</div>
+<div class="poem-signature">~~T</div>
+</article>
+<article class="sheet" id="love-for-hobby">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 02 / 09</span><h2>Love for Hobby</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M90 40c-24-31-70 10-17 51l36 25 33-28c40-41-4-73-32-38l-4 6" fill="#e4a5a0" fill-opacity=".50" stroke="#9f6b66"/><path d="M154 121l31-73 10 4-27 78-19 13z" fill="#edd1a3"/><path d="M185 48l3-10 10 5-3 9"/><path d="M158 125l-8 18 18-13"/><path d="M40 130q24-20 37-4q10 9 25-3" stroke="#9d8a71"/></svg></div></div>
+<div class="poem-text">The purest love firstly felt ever,
+Scars fading slower,
+but the heart healing a bit faster
+
+felt as if the happiness flowing in his veins forever,
+Praying the earlier pain would be encountered never,
+Because the bleeding it caused was just so severe
+
+Dollar asking him a question,
+Will this feed your stomach forever?
+
+Confidently he answered,
+it will definitely satisfy my soul however!
+
+Smirking thinking as if the reply was just so clever!!
+But then this conventional society,
+started demanding for a different answer!!
+
+Trapped him in such an embarrassing situation,
+What he did to receive so much humiliation?
+Asking god was that just his infatuation?
+Adding but it was just his authentic creation!
+
+God smiling above answered,
+Dear, Surely It was not infatuation
+but it was neither love too</div>
+<div class="poem-signature">~Tejaswini</div>
+</article>
+<article class="sheet" id="puzzle">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 03 / 09</span><h2>Puzzle</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M38 34h48v19c-10-4-16 4-16 11s6 15 16 10v20H38V77c9 6 18-2 18-10s-9-16-18-9z" fill="#b8cfb0"/><path d="M90 34h58v24c-7-4-14 3-14 11s8 14 14 10v15H90V76c-8 4-16-2-16-10s8-15 16-10z" fill="#e6b0a2"/><path d="M57 110h56v18c-7-4-13 3-13 10s5 12 13 8v10H57v-19c-8 4-14-2-14-10s6-14 14-9z" fill="#b4c6da"/><path d="M121 111h59v22c-9-4-15 4-15 11s6 15 15 10v7h-59v-12c-8 3-14-4-14-11s6-14 14-10z" fill="#53505a"/><circle cx="190" cy="37" r="17" stroke="#b58d65" fill="#fff8e8"/></svg></div></div>
+<div class="poem-text">Millions of jigsaw boxes with hundreds of pieces
+
+Jumbling together trying to fit in,
+Standard RGB smirking they will definitely get in
+
+Shades of Red clustered to form a Sunset
+Shades of Green congregated to form a Forest
+Shades of Blue came together to form a Beach
+
+Abondoned black trying to convince,I can be;
+A black bird in the Sunset
+A black rock in the Forest
+A black ship on the Beach
+
+Trying to fade out by adding whites,
+All failed attempts to be that concise
+
+Having stamped by
+Still figuring out where to fit in,
+Returning to the box ready to quit in
+
+Bewilderd Shades of Grey waiting,
+aware that they just need one piece
+
+Asking Black would you like to try in,
+Joyous Black jumps in,
+
+Forming that Perfect Moon,
+Yet completing the puzzle of an Afternoon!</div>
+</article>
+<article class="sheet" id="he-knows-when-to-call-you">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 04 / 09</span><h2>He knows when to call you</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M26 122q28-12 56 0t56 0t56 0"/><path d="M29 137q28-12 56 0t56 0t56 0"/><path d="M45 103q27-23 53-3"/><path d="M72 29q55 2 89 55" stroke="#b7b0a0" stroke-dasharray="3 7"/><path d="M146 28l-5 6m5-6 7 6m-7-6v-8"/><circle cx="183" cy="39" r="22" stroke="#c59b62" fill="#f4d49f" fill-opacity=".55"/><path d="M199 17q-14 12-15 29M199 17q-23 2-32 18M199 17q-5 21-1 38" stroke="#8aa18b"/></svg></div></div>
+<div class="poem-text">The turmoil of thoughts he was into
+the sleepless nights it implicated to
+
+Unclear decisions with so much procrastination
+Made himself his own malediction
+
+Surrendering himself to,
+the fear of being left alone
+the fear of getting antagonized
+the fear of getting validation
+the fear of being liked
+
+On the knees. closing his eyes. asking god,
+to emancipate him from his crowded mind
+
+Answering he said. Oh my dear. Its only
+you who can circumscribe you also you who can satisfy you
+you who can demote you also you who can promote you
+you who can blue you also you who can love you
+because everyone else is just an ephemeral desire !
+
+Shutting down his Speedometer of thoughts.
+deciding the proximity of the onslaughts.
+He said Amen</div>
+<div class="poem-signature">~Tejaswini</div>
+</article>
+<article class="sheet" id="diamonds">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 05 / 09</span><h2>Diamonds</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M23 72Q92-6 174 72Q98 145 23 72Z" fill="#e8ede6" fill-opacity=".6" stroke="#75615c" stroke-width="3"/><circle cx="101" cy="72" r="28" fill="#9d8976" fill-opacity=".45" stroke="#75615c"/><circle cx="101" cy="72" r="15" fill="#373338"/><circle cx="107" cy="65" r="6" fill="#fffaf3" stroke="none"/><path d="M44 51l-12-13m31 3-6-17m30 12-1-17m27 18 6-17m24 25 13-13"/><path d="M91 112l18-3 14 15-16 25-27-17z" fill="#a5d3db" stroke="#729eae"/><path d="M80 132l27 17-1-28-15-9m15 9 17 3" stroke="#fff" stroke-width="1.5"/><path d="M151 110l11-3 11 11-8 19-18-13z" fill="#b9c7ee" stroke="#729eae"/><path d="M147 124l18 13-3-20-11-7" stroke="#fff" stroke-width="1.5"/><path d="M192 72v18m-9-9h18" stroke="#c19c71"/></svg></div></div>
+<div class="poem-text">No not Diamonds &quot;in&quot; your eyes,
+Diamonds &quot;are&quot; your eyes!
+
+I agree not the notorious Whites
+but they are the Blacks so Rare,
+hence I wonder if they can ever be Mine?
+
+On the Full Moon Night,
+just one glare towards the Sky
+and even the Moon allures its Sparkling
+Circle Shining through your eyes!
+
+Pretending to be glowing Always,
+Nobody knows they cry White Diamonds
+Nowadays!
+
+Definitely those Black Diamonds have a
+dreamy Fairy Tale to Share,
+but I feel Concealing it is what
+makes them so Rare!</div>
+<div class="poem-signature">~Tejaswini</div>
+</article>
+<article class="sheet" id="betrayal">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 06 / 09</span><h2>Betrayal</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M30 116q23-27 47-29q17-8 35 5l10 8-15 12q-15-10-29-2l-37 24" fill="#e4bd9f" fill-opacity=".6"/><path d="M201 115q-26-31-48-27q-17-5-31 14l-14 11 15 11q14-16 27-13l32 25" fill="#e4bd9f" fill-opacity=".6"/><path d="M111 20c14-24 32 2 12 19L111 51 99 39c-22-17-3-43 12-19z" fill="#e0a5a4"/><path d="M108 20l10 12-11 10" stroke="#a15759"/><path d="M111 75v-12m0 30v-8" stroke-dasharray="2 6"/></svg></div></div>
+<div class="poem-text">One heartbeat away from her,
+One blink away from seeing her,
+One breath away from reaching her,
+One dimension away from reaching her
+
+Gulping those pills, leaving his human body at midnight,
+Taking his last breath one last time,
+Memories with her flashing through his eyes
+
+Heavy heart to see his loved ones crying,
+But happy to leave this &quot;World without her behind&quot;
+
+Reaching heaven nowhere he could find her,
+Asking God where she is?
+
+God said,
+&quot;She is in Hell not in Heaven&quot;
+&quot;Her betrayal to you was intentional&quot;
+&quot;Her love for you was pretentious&quot;
+
+Being Numb and puzzled,
+Scars on his heart appearing so faster,
+Feeling of betrayal flowing through his body like a current
+No more his innocent heart wants to see her!
+
+Realising his mistake,
+His tearful eyes, pleading God to send him back to life!
+God says, &quot;Sorry dear&quot;</div>
+<div class="poem-signature">~Tejaswini K</div>
+</article>
+<article class="sheet" id="untitled">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 07 / 09</span><h2>Untitled</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M94 57h48v94H94z" fill="#fff5dc" stroke="#c4a681"/><path d="M94 78q13 5 25 0t23 0"/><path d="M118 56c-19-16 3-25-1-45 25 20 23 34 1 45z" fill="#e7b77c" stroke="#c69367"/><path d="M118 55v-21" stroke="#be744e"/><path d="M59 127q-8-10 0-23m8 27q-15-19-3-30M164 136q22-20 9-36" stroke="#9cad92"/><path d="M159 104c-19-10-21 14-7 16 8 0 10-10 7-16z" fill="#c9a5b0"/><path d="M180 99q-13-14-22 0 12 14 22 0z" fill="#d7b1b4"/></svg></div></div>
+<div class="poem-text">Chatting with a loved elderly, a memory flashes by
+to cherish details of it intricately, you close your eyes slowly.
+
+Your face lighting up, heart&#x27;s dancing up,
+recalling every minute, every second of it.
+Blurred faces, vague backgrounds
+Yet reminiscing every breath full of it.
+
+Feeling yourself truly present there,
+in that moment once again
+experiencing their presence, touch right there.
+
+And suddenly,
+A thunderstorm crashes you away,
+ripping you out of that moment,
+felt as an electric shock, numbed your body so fast.
+
+Overwhelmed by the depth of that memory,
+willing to preserve it as a forever treasury.
+Lifting your wet eyelashes,
+Finding yourself holding their urn of ashes!</div>
+</article>
+<article class="sheet" id="a-random-day">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 08 / 09</span><h2>A Random Day</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M14 104q20-65 62 0q22-80 55-3q27-53 74 3" fill="#b9c6ac" fill-opacity=".3"/><path d="M15 103h200"/><path d="M32 64a61 61 0 0 1 122 0" stroke="#dbb99d" stroke-width="7"/><path d="M40 64a53 53 0 0 1 106 0" stroke="#c8b3d5" stroke-width="5"/><path d="M48 64a45 45 0 0 1 90 0" stroke="#9fbaa8" stroke-width="5"/><path d="M113 120h50l-6 28h-36z" fill="#f2dfc9" stroke="#a68e77"/><path d="M163 124q21-10 22 7t-23 8M128 103q-8-10 0-19m15 19q-7-11 1-20" stroke="#a68e77"/></svg></div></div>
+<div class="poem-text">A cycle ride beneath the rainbow&#x27;s arc.
+The stillness of mind when I reach the top of a mountain.
+The cold breeze kisses my cheeks after a tiring day.
+The fragrance of the Mogra further refreshes my soul.
+The hypnotic scent of soil rises after drizzles,
+followed by a cup of hot coffee after a long trek
+
+Familiar yet half forgotten faces staring back from a old album.
+The hush of night settles in after I have slept through the afternoon.
+Moonlight warming my skin and the world goes still in midnight.
+The emptiness of the heart disappearing whenever I look towards this
+cloudy sky</div>
+<div class="poem-signature">~Tejaswini</div>
+</article>
+<article class="sheet" id="question-mark">
+<div class="sheet-head"><div class="sheet-title-block"><span class="poem-number">Poem 09 / 09</span><h2>Question Mark?</h2></div><div class="doodle" role="img" aria-label="A small hand-drawn illustration inspired by the poem"><svg viewBox="0 0 240 170" aria-hidden="true"><path d="M54 51q29-12 59 5v91q-29-18-59-7z" fill="#fffaf0" stroke="#9f8975"/><path d="M113 56q28-17 59-5v89q-29-11-59 7z" fill="#fffaf0" stroke="#9f8975"/><path d="M64 72h38m-38 12h38m-38 12h35m29-24h31m-31 12h31m-31 12h25" stroke="#bdada0" stroke-width="2"/><path d="M128 107h34" stroke="#dfa8a1" stroke-width="7" stroke-opacity=".7"/><path d="M185 28q24-19 35 2q6 14-10 22q-8 4-8 11" stroke="#a97772" stroke-width="3"/><circle cx="202" cy="74" r="3" fill="#a97772" stroke="none"/></svg></div></div>
+<div class="poem-text">Maybe she wasn&#x27;t,
+The main character of his story,
+Not his favorite chapter which he reads again and
+again,
+Not a special bookmarked page in his personal
+diary,
+Not even a memory that quietly makes him smile!
+
+Perhaps,
+She was just an highlighted line,
+One that ends with a question mark?</div>
+<div class="poem-signature">-Tejaswini</div>
+</article>
+<footer class="foot">Words by Tejaswini Katale · <a href="index.html#life-offline">Return to Life Offline ↑</a></footer>
+</main></body></html>
