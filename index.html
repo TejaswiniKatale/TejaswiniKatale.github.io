@@ -1607,6 +1607,41 @@ body::after {
     height: 210px;
   }
 }
+
+/* Life Offline: one story per row + poetry collection link */
+#life-offline .life-offline-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+#life-offline .life-offline-card {
+  display: grid;
+  grid-template-columns: minmax(210px, 33%) minmax(0, 1fr);
+  align-items: stretch;
+}
+#life-offline .life-offline-card img {
+  height: 100%;
+  min-height: 212px;
+  max-height: 270px;
+}
+#life-offline .life-offline-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#life-offline .poetry-collection-link {
+  display: inline-block;
+  width: fit-content;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 14px;
+  text-underline-offset: 3px;
+}
+@media(max-width:700px) {
+  #life-offline .life-offline-card {grid-template-columns: 1fr;}
+  #life-offline .life-offline-card img {height: 210px;min-height: 0;max-height: none;}
+}
 </style>
 </head>
 
@@ -2409,6 +2444,7 @@ I have been lucky to have some amazing mentors throughout my journey, and I woul
       <div class="life-offline-card-body">
         <h3><i class="fa-solid fa-feather" aria-hidden="true"></i>Between the Lines</h3>
         <p>A little collection of poems, thoughts, and everything I sometimes find easier to express in words.</p>
+        <a class="poetry-collection-link" href="poems.html">Read my poems &rarr;</a>
       </div>
     </article>
 
