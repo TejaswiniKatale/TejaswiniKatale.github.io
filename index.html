@@ -1225,34 +1225,28 @@ body {
 }
 
 /* Decorative photograph strips on the empty left/right edges. */
+
+/* Clear construction photographs on both sides */
 body::before,
 body::after {
   content: "";
   position: fixed;
   top: 73px;
   bottom: 0;
+
   width: max(230px, calc((100vw - 1180px) / 2 + 18px));
+
   z-index: 0;
   pointer-events: none;
+
   background-repeat: no-repeat;
   background-size: cover;
-  /* Enhance side photographs without faded sepia or a white overlay. */
-  filter: contrast(1.7) saturate(1.3) brightness(0.86);
+
+  filter: none !important;
+  opacity: 1 !important;
 }
 
-body::before {
-  left: 0;
-  background-image: url("construction-left.jpg");
-  background-position: center center;
-  box-shadow: none;
-}
 
-body::after {
-  right: 0;
-  background-image: url("construction-right.jpg");
-  background-position: center center;
-  box-shadow: none;
-}
 
 /* Keep the navigation above the background photographs. */
 .topbar {
@@ -1273,6 +1267,8 @@ body::after {
 }
 
 /* The portfolio now reads like a paper/card laid over the photographs. */
+
+/* Seamless central content area */
 .container {
   position: relative;
   z-index: 1;
@@ -1280,12 +1276,15 @@ body::after {
   box-sizing: border-box;
   margin: 0 auto !important;
   padding: 25px 64px 42px !important;
-  background: rgba(248, 244, 239, 0.975);
-  border-left: 1px solid rgba(201, 176, 158, 0.48);
-  border-right: 1px solid rgba(201, 176, 158, 0.48);
-  box-shadow: 0 0 42px rgba(74, 49, 36, 0.09);
+
+  background: #F8F4EF;
+
+  border: none !important;
+  box-shadow: none !important;
+
   min-height: calc(100vh - 73px);
 }
+
 
 .intro {
   grid-template-columns: minmax(0, 1fr) 300px !important;
