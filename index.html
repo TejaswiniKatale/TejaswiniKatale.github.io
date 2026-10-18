@@ -175,14 +175,19 @@ body {
   padding-top: 58px;
 }
 
-
 .intro > div:first-child > p {
-  text-align: left;
-  text-justify: auto;
-  line-height: 1.5;
-  margin-bottom: 18px;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.55;
+  margin: 0 0 16px 0;
+  hyphens: none;
 }
 
+@media (max-width: 900px) {
+  .intro > div:first-child > p {
+    text-align: left;
+  }
+}
     h1 {
       font-size: 34px;
       margin: 0 0 12px 0;
@@ -1779,7 +1784,25 @@ body::after {
   }
 }
 
-  
+  /* About section research interests */
+#about .project-tags.about-tags-black {
+  display: block !important;
+  text-align: left;
+  line-height: 1.65;
+  margin-top: 12px;
+  font-size: 19px;
+}
+
+#about .project-tags.about-tags-black span {
+  display: inline !important;
+  white-space: normal;
+}
+
+#about .project-tags.about-tags-black span:not(:last-child)::after {
+  content: "  |  ";
+  margin: 0 6px;
+  color: #5A3A2E;
+}
 </style>
 </head>
 
@@ -1818,23 +1841,41 @@ body::after {
 
 
   
+
 <p>
-  Hi, Tejaswini here, nice to e-meet you :) <br><br>
-  I am an interdisciplinary reseacher. A Master’s in Computer Science (Thesis) student at the 
-  <a href="https://www.uh.edu/">University of Houston</a> graduating in May 2027 and a Research Assistant working at 
-  the <a href="https://www.uh.edu/cybercare/">USDOT Tier 1 UTC Transportation Cybersecurity Center for Advanced Research and Education (CYBER-CARE) Lab</a> with
-  <a href="https://www.cive.uh.edu/construction-management/faculty/gao-lu">Prof. Lu Gao</a> in the Department of Civil and Environmental Engineering.
+  Hi, Tejaswini here, nice to e-meet you :)
 </p>
 
 <p>
- I completed my undergrad in Computer Engineering from Vishwakarma Institute of Technology, India (2020 - 2024).
-  and later gained a year of research experience as a Graduate Research Assistant under 
-  <a href="https://scholar.google.com/citations?user=p9jqPbAAAAAJ&amp;hl=en&amp;oi=ao">Dr. Santosh Shinde</a>.
-</p>
-  <p>
- With a strong background in Artificial Intelligence and Computer Science, I am interested in integrating AI with Safe Systems approaches in transportation.
+  I am an interdisciplinary researcher currently pursuing a
+  Master's in Computer Science (Thesis) at the
+  <a href="https://www.uh.edu/">University of Houston</a>,
+  with an expected graduation in May 2027.
+  I am also a Research Assistant at the
+  <a href="https://www.uh.edu/cybercare/">
+  USDOT Tier 1 UTC Transportation Cybersecurity Center for
+  Advanced Research and Education (CYBER-CARE)</a>,
+  working with
+  <a href="https://www.cive.uh.edu/construction-management/faculty/gao-lu">
+  Prof. Lu Gao</a>.
 </p>
 
+<p>
+  I completed my undergraduate degree in Computer Engineering
+  at Vishwakarma Institute of Technology, India (2020–2024).
+  I subsequently gained a year of research experience as a
+  Graduate Research Assistant under
+  <a href="https://scholar.google.com/citations?user=p9jqPbAAAAAJ&hl=en&oi=ao">
+  Dr. Santosh Shinde</a>.
+</p>
+
+<p>
+  With a strong foundation in Artificial Intelligence and
+  Computer Science, my research interests focus on integrating
+  AI with Safe Systems approaches to improve transportation
+  safety.
+</p>
+  
 
 
 
