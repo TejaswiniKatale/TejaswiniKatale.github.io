@@ -1803,6 +1803,51 @@ body::after {
   margin: 0 6px;
   color: #5A3A2E;
 }
+  /* FINAL ABOUT SECTION TYPOGRAPHY FIX */
+
+#about > div:first-of-type:not(.about-opening-quote) {
+  min-width: 0;
+}
+
+/* About paragraphs */
+#about .intro-text p,
+#about > div:not(.profile-side):not(.about-opening-quote) > p {
+  text-align: left !important;
+  font-size: 19px !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  word-spacing: normal !important;
+  margin: 0 0 18px 0 !important;
+}
+
+/* Research interest tags */
+#about .project-tags.about-tags-black {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  column-gap: 12px !important;
+  row-gap: 7px !important;
+  font-size: 17px !important;
+  line-height: 1.4 !important;
+  margin-top: 20px !important;
+}
+
+#about .project-tags.about-tags-black span {
+  white-space: nowrap !important;
+}
+
+/* Remove separator bars */
+#about .project-tags.about-tags-black span::after {
+  content: none !important;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  #about .intro-text p,
+  #about > div:not(.profile-side):not(.about-opening-quote) > p {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+  }
+}
 </style>
 </head>
 
