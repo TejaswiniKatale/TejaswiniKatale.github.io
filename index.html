@@ -1227,6 +1227,11 @@ body {
 /* Decorative photograph strips on the empty left/right edges. */
 
 /* Clear construction photographs on both sides */
+
+/* =========================================
+   SIDE BACKGROUND PHOTOGRAPHS
+   ========================================= */
+
 body::before,
 body::after {
   content: "";
@@ -1244,6 +1249,22 @@ body::after {
 
   filter: none !important;
   opacity: 1 !important;
+}
+
+/* LEFT — Bridge Construction */
+body::before {
+  left: 0;
+  background-image: url("left_f.jpg");
+  background-position: center center;
+  box-shadow: none;
+}
+
+/* RIGHT — Safe Systems and Pedestrian Safety */
+body::after {
+  right: 0;
+  background-image: url("right_f.jpg");
+  background-position: center center;
+  box-shadow: none;
 }
 
 
