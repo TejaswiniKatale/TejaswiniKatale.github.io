@@ -1724,6 +1724,33 @@ body::after {
 }
 
 
+/* Opening quote above About section */
+.about-opening-quote {
+  grid-column: 1 / -1;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 -20px 0;
+  padding: 18px 25px;
+
+  background: #F3E9E2;
+  border: 1.5px solid #D8C1B2;
+  border-radius: 10px;
+
+  color: #5A3A2E;
+  font-style: italic;
+  font-size: 23px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .about-opening-quote {
+    font-size: 19px;
+    padding: 16px 18px;
+    margin-bottom: 0;
+  }
+}
+
   
 </style>
 </head>
@@ -1749,8 +1776,16 @@ body::after {
   </div>
 </div>
 
+
 <div class="container">
+
 <section class="intro" id="about">
+
+  <div class="about-opening-quote">
+    Humans bring ideas. AI brings intelligence.
+    Together, they build safer, smarter systems.
+  </div>
+
 <div>
 
 
@@ -1809,11 +1844,6 @@ body::after {
 <div class="profile-title">
   <strong>Master’s in Computer Science (Thesis)</strong><br/>
   <strong>University of Houston, Texas</strong>
-</div>
-
-<div class="research-note profile-quote">
-  Humans bring ideas. AI brings intelligence.
-  Together, they build safer, smarter systems.
 </div>
 
 </div> <!-- Closes profile-side -->
