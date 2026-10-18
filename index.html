@@ -1794,8 +1794,8 @@ body::after {
 }
 
 #about .project-tags.about-tags-black span {
-  display: inline !important;
-  white-space: normal;
+  display: inline-block !important;
+  white-space: nowrap !important;
 }
 
 #about .project-tags.about-tags-black span:not(:last-child)::after {
@@ -1835,8 +1835,17 @@ body::after {
   white-space: nowrap !important;
 }
 
-/* Remove separator bars */
-#about .project-tags.about-tags-black span::after {
+/* Restore separator bars */
+#about .project-tags.about-tags-black span:not(:last-child)::after {
+  content: "|" !important;
+  display: inline !important;
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+  color: #000000 !important;
+  font-weight: 400 !important;
+}
+
+#about .project-tags.about-tags-black span:last-child::after {
   content: none !important;
 }
 
