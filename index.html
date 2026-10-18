@@ -175,9 +175,12 @@ body {
   padding-top: 58px;
 }
 
-  .intro > div:first-child > p {
-  text-align: justify;
-  text-justify: inter-word;
+
+.intro > div:first-child > p {
+  text-align: left;
+  text-justify: auto;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 
     h1 {
@@ -1357,16 +1360,21 @@ body::after {
     box-shadow: none;
   }
 }
+
+/* About section links — blue without underline */
 #about a {
-  color: #5A3A2E;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+  color: #2563eb !important;
+  text-decoration: none !important;
+}
+
+/* Underline only on hover */
+#about a:hover {
+  color: #1d4ed8 !important;
+  text-decoration: underline !important;
   text-underline-offset: 3px;
 }
 
-#about a:hover {
-  text-decoration-thickness: 2px;
-}
+  
 /* True mobile/tablet stacking. This overrides the older 900px rule above. */
 @media (max-width: 900px) {
   body {
